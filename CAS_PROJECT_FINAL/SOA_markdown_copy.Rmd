@@ -82,6 +82,7 @@ data <- readRDS("data_for_input_25mar.rds")
 
 
 # Choosing top 10 procedure code based on severity and frequency, total 16 due to intersection
+#sairam
 clean_data1 = data %>% 
   filter(
     primary_procedure_code %in% 
