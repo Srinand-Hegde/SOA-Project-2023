@@ -1,0 +1,1057 @@
+Payment Denial Reason,fraud
+"PATIENT NAME MISMATCH IN USG REPORT, HENCE CLAIM IS BEING REJECTED ",1
+-NA-,1
+"AS THE MAIN CLAIM CASE/PS1/HOSP3P58568/PS298227 WAS REJECTED, HENCE THE CLAIM FOR CT MRI IS ALSO BEING REJECTED AS THE CLAIM FOR CT MRI SHOULD BE CLUBBED WITH MEDICAL PACKAGE AND MEDICAL PACKAGE HAS BEEN REJECTED",0
+REJECTED DUE TO DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,0
+Reject ,1
+"Claim is submitted after 15 days of Discharge of the patient, therefore claim has been rejected.",1
+PACKAGE WRONGLY BLOCKED HENCE THIS CLAIM REJECTED,0
+Delayed or no query reply,1
+"Discharge documents submitted after 16 days of discharge, TAT of 15 days for submission of claims is passed out, Hence claim is not Payable",1
+REJECTED AS ORAL MEDICATION GIVEN,0
+"Claim is submitted after 30 days of Discharge of the patient, therefore claim has been rejected. ",1
+REJECTED AS WRONG PACKAGE BLOCKED,0
+rejected as claim is submitted after 30 days of Discharge of the patient,1
+REJECTED AS CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE ,1
+"reject as Claim is submitted after 30 days of Discharge of the patient, ",1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim have been rejected as instructed by IC",1
+"Claim is submitted after 30 days of Discharge of the patient, therefore claim has been rejected as per SHA INSURER instructions",1
+"Claim is submitted after 30 days of Discharge of the patient, therefore claim has been rejected.",1
+"CLAIM WAS SUBMITTED AFTER MORE THAN 30 DAYS OF DISCHARGE,HENCE CLAIM IS BEING REJECTED",1
+REJECTED AS CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE,1
+DISCHARGE LESS THAN 24 HOURS. HENCE REJECTED.,0
+REJECTED AS CLAIM SUBMITTED AFTER 15 DAYS OF DEATH,0
+"CLAIM SUBMITTED 15 DAYS AFTER DISCHARGE ,HENCE REJECTED  ",1
+CLAIM SUBMITTED AFTER 30 DAYS OF PATIENT DISCHARGE HENCE REJECTED ,1
+REJECTED DUE TO MISMATCHED PACKAGE BLOCKED.,0
+"DISCHARGE UPDATED MORE THAN 15 DAYS,HENCE REJECTED ",1
+CLAIM REJECTED AS SURGICAL AND MEDICAL PACKAGE CAN NOT BE CLUBBED TOGETHER,0
+"Claim is submitted after 15 days of Discharge of the patient, therefore claim has been rejected",1
+"After repeated query raised,OT note and post operative X ray film not provided,hence rejected",1
+DISCHARGE UPDATED MORE THAN 15 DAYS HENCE REJECTED ,1
+"Documentation : Delayed or non-submission of claim (as per state guidelines), paid by patient",0
+REJECTED AS WRONG PACKAGE BLOCKED...ENDOSCOPY NOT PAYABLE UNDER THIS PACKAGE,0
+QUERY NOT REVERTED HENCE REJECTED ,1
+REJECTED AS ENDOSCOPY ARE NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS ALREADY PAID FOR THE SAME UNDER THIS ID CASE/PS1/HOSP3G58475/PS303398 ,1
+Delay in claim submission two months,1
+mismatch in package blocked and in discharge summary hence rejected ,0
+POST OP USG/HPE REPORT NOT ATTACHED HENCE REJECTED ,1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT,1
+"Claim is submitted after 30 days of Discharge of the patient, therefore claim has been rejected",1
+REJECTED AS CECT /ENDOSCOPY CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+DISCHARGE NOT UPDATED BY HOSPITAL WITH IN 30 DAYS FROM DISCHARGE DATE HENCE REJECTED.,1
+AS PER TMS CLAIM SUBMITTED 15 DAYS OF DISCHARGE OF PT,1
+rejected as after 15 days tat,1
+The claim stands rejected as there should be subsequent admission for medical treatment and standalone diagnostic package is not payable.,0
+DISCHARGE NOT UPDATED BY HOSPITAL WITHIN 15 DAYS FROM DISCHARGE DATE HENCE REJECTED.,1
+REJECTED AS AFTER 30 DAYS TAT,1
+DISCHARGE NOT UPDATED BY HOSPITAL WITH IN 15 DAYS FROM DISCHARGE DATE HENCE REJECTED.,1
+REJECTED AS SAME PACKAGE BLOCKED FOR SAME DOA IN SAME HOSPITAL FOR SAME PATIENT UNDER CASE/PS1/HOSP3P12536/PS323190 ..,0
+Case is already booked under surgical package case no. CASE/PS1/HOSP3G77043/PS289932. Hence surgical and medical case can not be booked at same time,0
+AS QUERY IS ALREADY ASKED FOR POST OP HPE REPORT AND IT IS NOT PROVIDED EVEN AFTER ASKING FOR 2 TIMES. HENCE REJECTED.,1
+"Claim is submitted after 15 days of Discharge of the patient, therefore claim has been rejected as per SHA INSURER instructions",1
+as per  documents provided  query reply  surgery not done hence rejected  ,1
+REJECTED AS PREAUTH WAS INITIATED AFTER PROCEDURE WAS DONE,1
+claim rejected as already same package paid under case id CASE/HOSP3P10675/FS204112,1
+ALCOHOL AND ITS RELATED DISEASES ARE NOT PAYABLE  AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED,0
+CASE REJECTED AS 15 DAYS TAT NOT COVERED FOR POST OP COMPLICATION,1
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, therefore claim have been rejected",1
+"As per the claim history, the patient has been hospitalized under the same package from 23rd Jan to 29th Jan under CASE/HOSP3P65870/PS255781. Hence the claim is rejected.",1
+"Claim is submitted after 15days of discharge of patient,Hence rejected",1
+Case is rejected as per the instruction by SHA,1
+WRONG PACKAGE BLOCKED AS PACKAGE BLOCKED FOR BLOOD TRANSFUSION BUT BT HAS NOT DONE AND  MRI INVESTIGATION DONE UNDER BLOOD TRANSFUSION PACKAGE HENCE REJECTED,0
+REJECTED AS Claim is submitted after 15 days of Discharge of the patienT,1
+"The claim is blocked under General medicine which should be blocked only along with a related medical package, the CPD stands rejected.",0
+SAME PACKAGE APPROVED AND SETTLED ON 13TH FEB.,1
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, hence rejected ",1
+REJECTED DUE TO DELAY SUBMISSION OF CLAIM MORE THEN 30 DAYS,1
+"Claim is submitted after 30days of discharge of patient,Hence rejected",1
+"Claim is submitted after 15 days of Discharge of the patient, therefore claim has been rejected. ",1
+REJECTED AS CLAIM SUBMITTED AFTER 15 DAYS,1
+"Claim is submitted after 30 days of Discharge of the patient, hence rejected",1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim  rejected as per IC instructions",1
+rejected as claim is submitted after 15 days of Discharge of the patient.,1
+REJECTED AS WRONG PACKAGE BLOCKED FOR DIALYSIS,0
+ALCOHOLIC AND ITS RELATED DISEASES ARE NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS,0
+Incomplete submission of documents by hospital after multiple queries,1
+CLAIM SUBMITTED AFTER 15 DAYS HENCE REJECTED  ,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS DISCHARGE OF THE PT,1
+rejected as claim is submitted after 30 days of Discharge of the patient.,1
+REJECTED AS AFTER 15 DAYS TAT ,1
+"Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient, therefore claim has been rejected.",1
+REJECTED AS ALCOHOL AND RELATED AILMENTS ARE NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+" As per the clinical notes diagnosis is chronic alcohol, this is exclusion as per the scheme, hence rejected",0
+REJECTED AS PREAUTH INITIATED AFTER DISCHARGE,1
+REJECTED AS PLEURAL TAP IS NOT COVERED UNDER THIS PACKAGE,0
+PRE AUTH INITIATED AFTER PATIENT DISCHARGE  HENCE REJECTED,1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, hence rejected",1
+"Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient, hence rejected",1
+"Surgery Not done, Pt Referred to Other Hospital, Hence claim is not Payable",0
+PREAUTH INITIATED AFTER 5 DAYS TAT HENCE REJECTED ,1
+REJECTED AS PER THE TREATMENT CHART ORAL MEDICATION GIVEN WHICH IS NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS,0
+"Already a package taken CASE/PS1/HOSP3G62650/PS297562,need for this package is not justified,Hence rejected",0
+REJECTED AS ORAL MEDICATION IS GIVEN,0
+"Claim is submitted after 15 days of Discharge of the patient, hence rejected",1
+CLINICAL PHOTO OF THE PATIENT DOES NOT JUSTIFY THE HOSPITAL ADMISSION,1
+Less then 24 hours admission not justified hence rejected,0
+DISCHARGE SUMMARY DIAGNOSIS SAYS ALD. PLEASE REVERT WITH CLARIFICATION WITH TREATING DOCTOR SEAL AND SIGN DISCHARGE SUMMARY DIAGNOSIS SAYS ALD. PLEASE REVERT WITH CLARIFICATION WITH TREATING DOCTOR SEAL AND SIGN DISCHARGE SUMMARY DIAGNOSIS SAYS ALD. PLEASE REVERT WITH CLARIFICATION WITH TREATING DOCTOR SEAL AND SIGN ,0
+REJECTED AS CECT CHARGES ARE NOT COVERED UNDER THIS PACKAGE REJECTED AS CECT CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+Less then 24hours admission not justified hence rejected,0
+REJECTED AS BLOCKED PROCEDURE IS NOT PAYABLE UNDER THIS PACKAGE,0
+"CLAIM SUBMITTED 15 DAYS AFTER DISCHARGE ,HENCE REJECTED ",1
+"REJECTED AS WRONG PKG BLOCKED,THIS PKG CAN BE CLUBBED ONLY WITH MEDICAL ADMISSION. PATIENT IS NOT UNDER MEDICAL ADMISSION.PKG TO BE BLOCKED UNDER SURGICAL",0
+patient name harwindr singh but document provide dalip chand hence rejected.,1
+CLAIM SUBMITTED AFTER 15 DAYS OF PATIENT DISCHARGE HENCE REJECTED ,1
+ALREADY APPROVED ONE PACKAGE HENCE REJECTED ,0
+FINAL BILL 14720 IS MORE THAN PREAUTH AMOUNT 12420 HENCE CLAIM BEING REJECTED,0
+delayed submission of claims. hence rejected,1
+REJECTED AS PER PROVIDED DOCUMENTS ORAL MEDICATION GIVEN,0
+The claim submission is delayed by one month and hence rejected.,1
+CLAIM REJECTED AS TAT OF 30 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT,1
+REJECTED AS THIS PACKAGE TO BE CLUBBED ONLY DURING MEDICAL ADMISSION/PKG,0
+REJECTED AS PER THE DISCHARGE SUMMARY THE PATIENT IS A CHRONIC ALCOHOLICS AND THE PREAUTH IS AUTO APPROVED AND ALCOHOLICS IS AN EXCLUSION IN PUNJAB . HENCE REJECTED.,0
+"Mismatch in package taken and procedure done,hence rejected",0
+"Claim submitted after 15 days of Discharge of the patient, Hence claim is not Payable",1
+"Claim is submitted after 30days of discharge of the patient,hence rejected",1
+"ot notes not attached for ligament repair, as per d/s and ot notes  DHS was done for Intertrochanteric Fracture and package for  (Intertrochanteric Fracture with  implant) is listed in package master for 17000, but hospital upload false final bill for 36300. hence claim is being rejected",0
+"Claim submitted by hospital is more than 15 days after patient discharged, hence rejected",1
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, therefore claim have been rejected and as instructed by IC",1
+REJECTED AS PROCEDURE AMOUNT INCLUSIVE IN SEVERE ANEMIA CASE TAKEN IN PAST HISTORY ON 24/2,0
+MISMATCH PACKAGE HENCE REJECTED ,0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 21/1/2020 AND CLAIM SUBMITTED ON 11/02/2020 AFTER 21 DAYS OF DISCHARGE HENCE REJECTED.,1
+Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient. Hence rejected.,1
+REJECTED AFTER 15 DAYS TAT ,1
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, therefore claim have been rejected ",1
+"AS THE SAME PACKAGE IS PAID IN PAST IN  CASE/HOSP3P48986/PS233681, AS THIS PACKAGE IS ONLY PAYABLE IN ONE TIME FOR THE WHOLE FAMILY. HENCE REJECTED.",0
+REJECTED AS PATIENT UNDER MEDICAL PACKAGE ON 21/1/2020..MEDICAL AND SURGICAL PACKAGE CANNOT BE CLUBBED,0
+"PREAUTH TAKEN FOR  Blood and blood component transfusion, BUT FINAL BILL UPLOADED FOR ECHO, NOT BT NOTES ATTACHED, REJECT",0
+DELAYED SUBMISSION OF THE CLAIM AFTER DISCHARGE DISCHARGE OF THE PATIENT HENCE REJECTED,1
+Referred to another hospital before the surgery ,0
+QUERY NOT REVERTED CLEAR VITAL CHART NOT PROVIDED HENCE CLAIM REJECT,1
+Procedure not done hence rejected,0
+query not reverted hence rejected.,1
+Approved,0
+"ENHANCEMENT TAKEN ON SAME DATE , CASE/HOSP3P71424/PS259888  HENCE REJECTED ",0
+Query not reverted for vitals and treatment chart hence rejected,0
+ALCOHOLIC AND SUBSTANCE ABUSE DISEASES AND ITS RELATED COMPLICATIONS ARE NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED,0
+CLAIM SUBMITTED AFTER 15 DAYS (TAT PERIOD) OF DISCHARGE DATE HENCE CLAIM HAS BEEN REJECTED ,1
+"Discharge documents submitted after 19 days of discharge, TAT of 15 days for submission of claims is passed out, Hence claim is not Payable",0
+REJECT AS PER SHA DIRECTION ,1
+PRE AUTH INITIATED AFTER THE PATIENT DISCHARGE HENCE REJECTED ,1
+WRONG PACKAGE BLOCKED HENCE REJECTED,0
+REJECTED AS PER DOCUMENTS PROVIDED ORAL MEDICATION GIVEN,0
+CASE REJECTED AS PATIENT IN SURGICAL CASES NO MEDICAL PACKAGE CAN NOT BE CLUBBED,0
+REJECTED AS CLAIM SUBMITTED AFTER 30 DAYS OF DISCHARGE,1
+operation is not done,0
+"As per document provide DOA is 19/2/2020,PurAuth is raised after 5days of admission of the patient,hence rejected",1
+CLAIM SUBMITTED AFTER 30  DAYS OF PATIENT DISCHARGE HENCE REJECTED ,1
+Approved  Rs 1235 for CT of upper abdomen,0
+as per documents of patient procedure not done patient referred to another hospital hence rejected ,0
+"ALREADY ONE PACKAGE HAS TAKEN FOR SEVERE ANEMIA CASE/PS1/HOSP3P10731/PS303022 ,BT INCLUDED IN SEVERE ANEMIA PACKEGE ,PROCEDURE AUTO APPROVED HENCE REJECTED ",0
+CPD REJECTED,0
+REJECTED AS MEDICAL AND SURGICAL PACKAGES CANNOT BE CLUBBED TOGETHER,0
+Rejected due to delay in submission of claims beyond 15 days,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 30 DAYS OF DISCHARGE OF THE PT,1
+Query not reverted hence rejected,1
+REJECTED AS NCCT HEAD NOT COVERED UNDER THIS PKG,0
+REJECTED AS ECHO CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+THE PROCEDURE FOR PACKAGE BLOCKED IS WRONG HENCE REJECTED,0
+"ORAL CHEMOTHERAPY IS NOT PAYABLE, HENCE DENIED ",0
+approve,0
+medical management in  surgical package done. surgery NOT done,0
+REJECTED AS PLANNED PROCEDURE DONE BEFORE PREAUTH APPROVAL,1
+CASE REJECTED AS ALREADY CAG AMOUNT PAID IN PTCA,0
+REJECTED AS MEDICAL MNGT FOR POST OP COMPLICATION TO BE COVERED IN SURGERY PACKAGE ITSELF,0
+Claim submitted after 30 days of discharge hence rejected,1
+REJECTED AS PREAUTH WAS  INITIATED AFTER DISCHARGE OF THE PATIENT,1
+APPROVED FOR ADMISSION DAYS FOR WHICH APPROVAL AT PREAUTH IS TAKEN(APPROVED FOR 29TH...ENHANCEMENT WAS INITIATED AFTER DISCHARGE),0
+REJECTED AS ORAL MEDICATION GIVEN AS PER DOCUMENTS PROVIDED,0
+"BT NOTES AND FINAL BILL FOR BT NOT ATTACHED ,HENCE CLAIM IS BEING REJECTED",0
+Rejected,1
+DUPLICATE CLAIM SAME PCAKGE BLOCKED UNDER CASE ID CASE/PS1/HOSP3G61100/PS290282 ,0
+"Discharge documents submitted after 21 days of discharge, TAT of 15 days for submission of claims is passed out, Hence claim is not Payable",1
+Claim Submitted after 50 days of actual discharge of Pt Hence claim is not Payable,1
+REJECTED AS HRCT CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+"no evidence of procedure done,hence rejected",1
+REJECTED AS CLAIM IS SUBMITTED AFTER 30 DAYS OF DISCHARGE OF PATIENT,1
+REJECTED AS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF PATIENT,1
+"Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient, therefore claim has been rejected. ",1
+"DISCHARGE UPDATED MORE THAN 15 DAYS,HENCE REJECTED  ",1
+Case rejected as Preauth initiated after 10 days of Discharge of Patient,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS DISCHARGE OF PT,1
+"Pt Treated from 17th to 21st Feb 2020 but Package blocked on 25th Feb 2020 i.e after 4 days of actual discharge and 8 days of actual admission. Pre-Auth initiated after 5 days of Admission and also after Discharge of the Patient, Hence claim is not Payable",1
+"Patient being admitted for medical management till 27th Jan and since dialysis should be blocked under medical management package and not under surgical package, the claim stands rejected.",0
+REJECTED AS PREAUTH WAS INITIATED AFTER 5 DAYS OF ADMISSION AND AFTER DISCHARGE,1
+rejected as claim is submitted after 15 days of Discharge of the patient. ,1
+DISCHARGE NOT UPADATED BY HOSPITALS WITHIN 15 DAYS FROM DISCHARGE DATE . HENCE REJECTED.,1
+"Claim submitted after 30 days of Discharge of the patient, Hence claim is not Payable",1
+ALCOHOLIC AND ITS RELATED DISEASES ARE NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED,0
+REJECTED AS PATIENT NOT UNDER MEDICAL ADMISSION..THIS PACKAGE TO BE CLUBBED WITH MEDICAL ADMISSION ONLY,0
+"Claim is submitted after 15 days of discharge of the Patient, therefore claim can be rejected",1
+REJECTED AS QUERY NOT REVERTED REGARDING VITALS AND DRUG CHART,1
+"DOA 17/2/20, DOS 18/2/20, PREAUTH INITIATED ON 28 / 2/20 I.E. AFTER 10 DAYS OF Sx, DOD 29/2/20 BUT CLAIM INITIATED ON 27/3/20 I.E. AFTER MORE THAN 15 DAYS, HENCE CLAIM IS BEING REJECTED FOR DELAY PREAUTH AND DELAY SUBMISSION OF CLAIM",1
+REJECTED AS PATIENT IS GIVEN ORAL MEDICATION AS PER DOCUMENTS PROVIDED,0
+AS PER TMS CLAIM SUBMITTED AFTER 15 DAYS OF PATIENT DISCHARGE HENCE REJECTED  ,1
+REJECTED AS PREAUTH RAISED AFTER 5 DAYS,1
+"CLAIM SUBMITTED 30 DAYS AFTER THE DISCHARGE, HENCE DENIED ",1
+"Claim is submitted by hospital is after 30days of discharge of patient,hence rejected",1
+REJECTED AS PREAUTH INITIATED AFTER PROCEDURE IS DONE,1
+REJECTED AS PATIENT UNDER MEDICAL PKG ..MEDICAL AND SURGICAL PKG CANNOT BE CLUBBED,0
+"Claim is submitted after 15days of discharge of the patient,hence rejected",1
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE OF THE PATIENT,1
+"Delayed submission of claims 30 days after the discharge of the patient, hence denied",1
+query not revert hence reject.,1
+NAME AND AGE MISMATCH IN D/S AND HD NOTES HENCE CLAIM IS BEING REJECTD,1
+REJECTED AS ALTERNATE DAY TREATMENT IS GIVEN,0
+REJECTED DUE TO DELAYED IN CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+REJECTED AS PLEURAL FLUID EXAMINATION IS NOT COVERED UNDER THIS PACKAGE,0
+already amount inclusive with DIALYSIS PACKAGE hence rejected ,0
+"Claim is submitted after 15 days of Discharge of the patient, hence claim has been rejected. ",1
+"reject as Claim is submitted after 15 days of Discharge of the patient,",1
+PREAUTH INITIATED AFTER 5 DAYS OF ADMISSION AND AFTER DISCHARGE OF THE PATIENT HENCE REJECTED  ,1
+Patient is a known alcoholic and is diagnosed with Megaloblastic anemia. Hence the claim stands rejected.,0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 14/01 /2020 AND CLAIM SUBMITTED ON 1/02/2020 AFTER 27 DAYS OF DISCHARGE HENCE REJECTED.,1
+Surgery done prior to the approval and hence the claim stands rejected.,1
+CLAIM REJECTED AS PATIENT EXPIRED BEFORE RADIOTHERAPY DONE,1
+MAXIMUM AMOUNT PAID FOR TWIN 1 SAME BABY HENCE REJECTED,0
+"High end radiological diagnostic (CT, MRI, Imaging including nuclear imaging) can only be clubbed with medical package. But patient is not registered under any medical package, hence claim is being rejected",0
+REJECTED AS PROCEDURE IS DONE BEFORE THE APPROVAL AS THIS IS NOT AN EMERGENCY CASE,0
+Pls Provide Delivery Notes,0
+REJECTED AS PREAUTH INITIATED AFTER 5 DAYS,1
+DISCHARGE IS LESS THAN 24 HOURS.HENCE REJECTED.,0
+REJECTED DUE TO PROCEDURE WAS ABANDONED AS PER THE DISCHARGE SUMMARY ,0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 15/01/2020 AND CLAIM SUBMITTED ON 01/02/2020 AFTER 16 DAYS OF DISCHARGE HENCE REJECTED. ,1
+RECOVERY AMOUNT RS.9000 DEDUCTED.,0
+REJECTED AS CECT /ECHO  CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+"After repeated query raised mortality audit(annexure  5)form not provided,Hence rejected",0
+"CLAIM SUBMITTED 1 MONTH AFTER THE DISCHARGE, HENCE DENIED",1
+ALREADY PAST HISTORY  APPROVED ONE PACKAGE HENCE REJECTED ,0
+PREAUTH INITIATED AFTER 5 DAYS ADMISSION AND DISCHARGE  OF THE PATIENT HENCE REJECTED ,1
+REJECTED AS NO SURGERY HAS BEEN DONE,0
+REJECTED AS ALTERNATE DAYS TREATMENT WAS GIVEN,0
+"Claim is submitted after 30 days of Discharge of the patient, Hence claim is not Payable",1
+"QUERY IS ASKED FOR POST OP X RAY AND CLINCIAL PHOTGRAPH OF THE PATIENT AND IT WAS NOT PROVIDED EVEN AFTER ASKING FOR MANY TIMES , HENCE REJECTED.",1
+REJECTED AS POST OP COMPLICATION WILL BE COVERED UNDER SURGICAL PACKAGE WITHIN 15 DAYS ,1
+"HD DONE BEFORE MORE THAN 5 DAYS OF PREAUTH , REJECT",1
+REJECTED AS DOCUMENTS NOT PROVIDED,1
+HOSPITAL HAS OPTED FOR PLANNED PROCEDURE AND PROCEDURE DONE BEFORE APPROVAL HENCE REJECTED AS NO PROPER JUSTIFICATION GIVEN,1
+PREAUTH AS BEEN REJECTED HENCE CASE REJECTED,1
+QUERY IS ASKED FOR POST OP KUB X RAY FILM FOR THIS CASE AS IT IS A MANDATORY DOCUMENTS WHICH IS NOT GIVEN AND QUERY IS NOT REPLIED PROPERLY . HENCE REJECTED.,1
+package mismatch.,0
+Rejected as the submission is after 15 days,1
+"REJECTED AS Claim is submitted after 15 days of Discharge of the patient,",1
+"Claim is submitted after 30 days of Discharge of the patient, claim has been rejected. ",1
+CLAIM REJECTED AS SURGERY NOT DONE,0
+REJECTED AS PREAUTH INITIATED AFTER DISCHARGE OF PATIENT,1
+OPD converted into IPD (Justification for admission not found) Hospitalization less than 24 hours,0
+AS THIS PACKAGE IS PAYABLE WITH THE MEDICAL PACKAGE TAKEN IN CASE/PS1/HOSP3P10731/PS304792. HENCE REJECTED.,0
+"Claim submitted 15 days after discharge, hence denied ",1
+REJECTED AS POST OP BLOOD TRANSFUSION IS COVERED IN SURGERY PACKAGE ,0
+REJECTED AS PACKAGE BLOCKED FOR VITRECTOMY WITH RETINAL DETACHMENT BUT OT NOTES PROVIDED FOR TYMPANOPLASTY,0
+"Query not reverted, post op x ray film not provided, hence rejected",1
+delayed submission of claim from date of discharge,1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 13/01 /2020 AND CLAIM SUBMITTED ON 4/02/2020 AFTER 22 DAYS OF DISCHARGE HENCE REJECTED. CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 13/01 /2020 AND CLAIM SUBMITTED ON 4/02/2020 AFTER 22 DAYS OF DISCHARGE HENCE REJECTED. ,1
+REJECTED AS PRE AUTH INITIATED AFTER 5 DAYS,1
+REJECTED AS WRONG PACKAGE BLOCKED..SURGICAL MNGT DONE UNDER MEDICAL PACKAGE,0
+REJECTED AS APPROVAL FOR ECHO AND HRCT CANNOT BE GIVEN UNDER THIS PACKAGE,0
+REJECTED AS OVERWRITTING OF DATE HAS DONE IN DIALYSIS CHART,1
+REJECTED AS CT ABDOMEN NOT COVERED UNDER THIS PKG,0
+REJECT AS PER SHA DIRECTION,1
+CT under GA is payable under the blocked package and hence the claim is rejected.,0
+AS PER PAST CLAIM HISTORY PACKAGE CASE/PS1/HOSP3P49877/PS324566 FOR CHOLECYSTECTOMY TAKEN HENCE CLAIM REJECTED BECAUSE 5 DAYS PRE OPERATIVE PERIOD IS INCLUDED IN SURGICAL PACKAGE ,0
+"FINAL BILL AMOUNT 44000 IS MORE THAN PREAUTH AMOUNT 17600, PACKAGE FOR CARPAL TUNNEL SYNDROME IS LISTED IN PACKAGE MASTER FOR 10000, REJECT",0
+"Claim is submitted after 30 days of Discharge of the patient,hence rejected",1
+DISCHARGE NOT UPADATED BY HOSPITALS WITHIN 30 DAYS FROM DISCHARGE DATE . HENCE REJECTED.,1
+CPD REJECTED SINCE TREATMENT OF ANEAMIA IS ITSELF BLOOD TRANSFUSION,0
+"Claim is submitted by hospital is after 15 days of Discharge of the patient,Hence rejected. ",1
+THE PROCEDURE FOR PACKAGE IS WRONGLY BLOCKED HENCE THIS CLAIM IS REJECTED,0
+Preauth initiated after 5 days of admission and after discharge hence rejected,1
+"procudere auto approved ,blocked for bt but  bt is included in severe anemia package ,severe anemia package already taken CASE/HOSP3P66049/PS244021 hence rejected ",0
+REJECTED AS TAT WINDOW OF PREVIOUS PACKAGE IS NOT COMPLETED,0
+AS PER AUDIT REMARKS NO SPECIALISAT AVAILABLE HENCE REJECTED ,1
+HD CHART PROVIDED IS NOT OF THE SAME DATE AS THAT OF HEMODIALYSIS HENCE REJECTED ,1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim can be rejected",1
+"rejected as surgery not done as per ot notes , it is done on 22/2  for which ppd already approved in past history on 17/2 ",0
+"CLAIM REJECTED AS Diseases, illness or injury due to or arising from use, CLAIM REJECTED AS Diseases, illness or injury due to or arising from use, CLAIM REJECTED AS Diseases, illness or injury due to or arising from use, misuse or abuse of drugs or alcohol or use of intoxicating substances, or such abuse or addiction NOT PAYABLE HENCE REJECTED ",1
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE,1
+The claim has been rejected as the note given by Doctor about Alcohol Dependency.As per NHA its is exclusion of scheme,0
+HD PACKAGE BLOCKED UNDER GENERAL MEDICINE INSTEAD OF SURGERY AS PATIENT IS NOT ADMITTED UNDER ANY OTHER MEDICAL PACKAGE HENCE REJECTED,0
+AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF PT ,1
+"No evidence of treatment done,hence rejected",1
+already pkg approved on same date hence rejected,0
+REJECTED DUE TO DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE ,1
+REJECTED AS PREAUTH WAS AFTER  DISCHARGE,1
+CLAIM REJECTED AS NO PROCEDURE DONE,0
+REJECTED AS HOSPITAL OPTED PLANNED PROCEDURE AND PREAUTH WAS INITIATED AFTER PROCEDURE IS DONE,1
+Rejected as the submission is 2 month late,1
+"Claim is submitted after 30 days of Discharge of the patient, therefore claim has been rejected. Claim is submitted after 30 days of Discharge of the patient, therefore claim has been rejected. ",1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim have been rejected and as instructed by IC",1
+DELAYED SUBMISSION OF THE CLAIM FROM DISCHARGE DATE HENCE REJECTED ,1
+REJECTED AS PATIENT IS DEPENDENT ON ALCOHOL,0
+"REJECTED s per TMS, Pre-Auth is initiated after 5 days of admissio",1
+REJECTED AS PREAUTH IS INITIATED AFTER DISCHARGE OF THE PATIENT,1
+REJECTED AS PER TREATMENT CHART AND D/S ORAL MEDICATION GIVEN,0
+"Claim is submitted after 30days of discharge of the patient,hence rejected ",1
+REJECTED AS MEDICAL AND SURGICAL PACKAGE CAN NOT BE CLUBBED TOGETHER,0
+Duplicate claim CASE/HOSP3P25404/PS242935 hence rejected,1
+PREAUTH REJECTED HENCE CASE REJECTED,1
+"REJECTED AS Claim is submitted after 30 days of Discharge of the patient,",1
+REJECTED AS MEDICAL MNGT  POST OP COMPLICATIONS TILL 15 DAYS ARE COVERED UNDER SURGERY PACKAGE ITSELF,0
+approved ,0
+REJECTED AS APPROVAL FOR CONSERVATIVE MNGT CANNOT BE GIVEN UNDER U100,0
+AS PER THE DISCHARGE SUMMARY THE PATIENT IS REFERRED TO SOMEOTHER HOSPITAL AND THE SURGERY IS NOT PERFORMED IN THIS HOSPITAL AND HENCE THE PACKAGE TAKEN IS NOT JUSTIFIED. HENCE REJECTED.,0
+CKD patient cant block this pkg kindly raise fresh preauth with pkg code S100214,0
+DICHARGE IS LESS THAN 24 HOURS. HENCE REJECTED.,1
+DELAYED SUBMISSION OF THE CLAIM FROM DISCHARGE DATE HENCE REJECTED,1
+"Already multiple severe anemia package taken CASE/HOSP3P27593/PS249609, so BT also included in that package, so rejecting this claim",0
+REJECTED AS APPROVAL FOR MEDICAL MNGT CANNOT BE GIVEN UNDER U100,0
+DELAYED CLAIM SUBMISSION FROM DISCHARGE DATE HENCE REJECTED ,1
+REJECTED AS CLAIM IS SUBMITTED AFTER MORE THAN 30 DAYS,1
+"After repeated query raised post operative X ray film not provided,Hence rejected",1
+"As per the past history same package done for same eye (R/E), claim already paid, so this package not justified, hence rejected",1
+"PREAUTH REJECTED, HENCE CASE REJECTED. ",1
+"CASE/HOSP3P81794/PS250490 Surgical package booked, admission included in surgical package, Duplicate claim",1
+delayed submission of documents,1
+"AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF THE PT,THERE FORE CLAIM HAVE BEEN REJECTED",1
+Reject (As per clinical on bed photo no active IV drip),1
+REJECTED AS HOSPITAL HAS OPTED FOR PLANNED PROCEDURE AND PROCEDURE DONE BEFORE APPROVAL,1
+Rejected as the submission is after 30 days.,1
+REJECTED AS PREAUTH WAS INITIATED AFTER 5 DAYS OF DOA(14/2/2020 MENTIONED IN D/S) ,1
+"Discharge documents submitted after 43 days of discharge, TAT of 30 days for submission of claims is passed out, Hence claim is not Payable",1
+"Delayed submission of claims 30 days after the discharged, hence denied",1
+REJECTED AS PACKAGE WRONGLY BLOCKED,0
+"As per the summary, surgery not done, hospital has taken special case type, so rejecting this claim (LAMA before surgery amount is 0)",0
+AS PER TMS CLAIM SUBMITTED AFTER 15 DAYS OF THE PATIENT DISCHARGE HENCE REJECTED AND PROVIDE HD CHART ALSO NOT OF 15/2/2020 ,1
+"AS PER THE AUDIT REMARKS, NO SPECIALIST IS AVAILABLE. HENCE REJECTED.",1
+as per tms claim submitted after 15 days of patient discharge hence rejected ,1
+"Claim is submitted by hospital is after 30days of Discharge of patient,Hence rejected. ",1
+"Delayed submission of claims, documents submitted 15 days after the discharge, hence denied",1
+"Discharge documents submitted after 17 days of discharge, TAT of 15 days for submission of claims is passed out, Hence claim is not Payable",1
+"Discharge date is 29 Feb 2020. Claim submitted after 15 days of Discharge of the patient, Hence claim is not Payable",1
+REJECTED AS CLAIM IS SUBMITTED AFTER 30 DAYS,1
+SURGICAL AND MEDICAL PACKAGE CAN NOT BE CLUBBED TOGETHER,0
+"PREAUTH WAS INITIATED ONE DAY BEFORE DISCHARGE AND PATIENT WAS ON ORAL MEDICATION AS PER DOCUMENTS GIVEN ON 2ND,HENCE REJECTED",1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, hence rejected ",1
+REJECTED AS PATIENT IS ON ORAL MEDICATION,0
+QUERY NOT REVERTED BY THE HOSPITAL HENCE REJECTED.,1
+rejected. as per the given reply from hospital BT not done ,1
+REJECTED AS PER POLICY CLAIM RAISED AFTER 15 DAYS TAT PERIOD,1
+REJECTED AS WRONG PACKAGE BLOCKED..CT CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+Delay in claim submission for more than two months,1
+REJECTED AS PRE AUTH INITIATED AFTER 5 DAYS OF ADMISSION,1
+REJECTED AS PREAUTH WAS INITIATED AFTER 5 DAYS OF ADMISSION,1
+"Claim is submitted after 30days of discharge of patient,hence rejected ",1
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, therefore claim can be rejected",1
+"Already package taken CASE/HOSP3G81986/PS185138,again is not justified,hence rejected",1
+Rejected as the submission is 3 month late,1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim have been rejected",1
+REJECTED AS UGI ENDOCSCOPY IS NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS ON REPEATED QUERIES REQUESTED DOCUMENTS WERE NOT PROVIDED...ON BED PHOTO NOT GIVEN,1
+"Claim is submitted after 15 days of Discharge of the patient(death),hence rejected",1
+REJECTED AS INSTEAD OF REPEATED REMINDERS HOSPITAL HAS NOT PROVIDED REQUIRED DOCUMENTS HENCE REJECTED,1
+Patient has been referred to PGI hospital for the surgery. Hence the surgery package is rejected.,0
+REJECTED AS PREAUTH IS INITIATED(23/1/2020) AFTER DISCHARGE(21/1/2020 MENTIONED ONLINE) OF THE PATIENT,1
+"reject .as already one package as taken CASE/HOSP3P14357/PS252896 nephrostomy percutaneous , in that medical package also included  ,with in a 3 days of the surgery  again medical  package not payable  . hence rejected ",1
+AS Par package mismatched diagnosis hence reject,0
+"REJECT .AS ALREADY ONE PACKAGE APPROVED ON SAME DAY 23/1/2020 CASE/HOSP3G81950/PS255284 ,PROCEDURE AUTO APPROVED. HENCE REJECTED ",1
+ CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 15/01 /2020 AND CLAIM SUBMITTED ON 31/01/2020 AFTER 16 DAYS OF DISCHARGE HENCE REJECTED. ,1
+"CLAIM ALREADY PAID ON SAME DATE CASE/HOSP3P12536/PS253081,HENCE REJECTED ",1
+"MISMATCH IN PACKAGE BLOCKED AND IN PROVIDED DOCUMENTS ,A BLOCKED FOR BT AND PROVIDED ENDOSCOPY REPORT ,PROCEDURE AUTO APPROVED .HENCE REJECTED ",1
+"Claim is submitted after 15 days of Discharge of the patient,hence rejected",1
+"Discharge documents submitted after 18 days of discharge, TAT of 15 days for submission of claims is passed out, Hence claim is not Payable",1
+REJECTED AS PATIENT WAS ON MEDICAL ADMISSION..MEDICAL AND SURGICAL PACKAGE CANNOT BE CLUBBED,0
+REJECTED AS PATIENT IS DRUG ADDICTED,0
+FINAL BILL 30275 IS MORE THAN PREAUTH AMOUNT 18000 HENCE CLAIM BEING REJECTED,0
+CLAIM REJECTED AS NO PROCEDURE HAS DONE,1
+REJECT AS NO Evidence PROVIDED ,1
+DISCHARGE IS LESS THAN 24 HOURS HENCE REJECTED.,1
+claim rejected as no procedure done ,1
+Reject as the claim submission is beyond 1 month period,1
+"As per the summary diagnosis is drug abuse, this is exclusion as per the scheme, hence rejected",0
+REJECTED AS PREAUTH IS INITIATED AFTER PROCEDURE IS DONE,1
+"Its a case of Alcohol Liver disease, As per Guidelines Diseases arising from Alcohol and other drugs abuse are not Payable",0
+"Delay submission of claims, reserved package booked under Unspecified package without proper referral ",1
+"Claim submitted 15 days after the discharge, hence denied",1
+PRE AUTH INITIATED AFTER THE PATIENT DISCHARGE HENCE REJECTED,1
+REJECTED AS DAY TO DAY TREATMENT IS NOT GIVEN,0
+"As per the past history severe anemia package already paid CASE/HOSP3P70163/PS239335, so BT also included in that package, Hence rejecting this package",1
+"As per the clinical notes diagnosis is chronic alcohol, this is exclusion as per the scheme, hence rejected",0
+DISCHARGE UPDATED AFTER 15 DAYS HENCE REJECTED ,1
+"As per the clinical notes mentioned as patient is in drunken state, fall suddenly, and diagnosis is alcoholic. So this is exclusion as per the scheme, hence rejected",0
+REJECTED AS LESS THAN 24 HRS ADMISSION FOR SURGICAL PROCEDURE ..AS PER POLICY TERMS AND CONDITIONS 24 HRS HOSPITALIZATION TO BE COMPLETED,1
+"CLAIM INITIATED AFTER MORE THAN 15 DAYS OF D/ S, REJECT",1
+REJECTED AS CLAIM SUBMITTED AFTER 30 DAYS OF DISCHARGE ,1
+REJECTED AS ALREADY SAME PACKAGE BLOCKED ON THIS DATE,0
+QUERY NOT REVERTED HENCE REJECTED  ,1
+"REJECTED AS STAT AND ORAL MEDICATION GIVEN,ADMITTED AND DISCHARGED ON SAME DAY,OPD TO IPD CONVERSIONS AS NOT ALLOWED AS PER POLICY TERMS AND  CONDITIONS",1
+AS PER TMS CLAIM IS SUBMITTED AFTER 30 DAYS DISCHARGE OF THE PT ,1
+REJECTED AS DRUG ABUSE AND RELATED AILMENTS ARE NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+"INVESTIGATION REPORT AND ALL DAYS VITAL CHART NOT ATTACHED ,HENCE CLAIM IS BEING REJECTED",1
+REJECTED AS PATIENT UNDER MEDICAL ADMISSION TILL DEATH 16/1/2020...MEDICAL AND SURGICAL PACKAGE CANNOT BE BLOCKED,0
+Preauth Initiated after discharge of patient,1
+CLAIM  SUBMITTED AFTER 15 DAYS OF PATIENT DISCHARGE HENCE REJECTED ,1
+REJECTED AS ALTERNATE DAY TREATMENT WAS GIVEN,0
+Duplicate claim CASE/HOSP3P58568/PS257213 already approved,1
+"Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient, therefore claim has been rejected",1
+" Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient, therefore claim has been rejected.",1
+REJECTED AS POST OP 7 DAYS MEDICAL MANAGEMENT COVERED UNDER SURGICAL PACKAGE HENCE REJECTED,0
+REJECTED SUE TO DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+REFERRAL SLIP WITH SIGN AND STAMP OF SMO OF DISTRICT HOSPITAL NOT PROVIDED ,1
+"REJECT AS PER SHA DIRECTION,",1
+"REJECTED , AS PER SHA DIRECTION",1
+case rejected as wrong package blocked,0
+"Discharge documents submitted after 32 days of discharge, TAT of 30 days for submission of claims is passed out, Hence claim is not Payable",1
+"Claim submitted by hospital is more than 30 days after patient discharged, hence rejected",1
+"Reject as the DJ stent removal is already present in stenting package, no separate charges are given for removal, as per new guideline by SHA",0
+REJECTED AS CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE AS INSTRUCTED BY IC,1
+REJECTED AS MEDICAL AND SURGICAL PACKAGES CANNOT BE CLUBBED ,0
+MEDICAL AND SURGICAL PACKAGES CANNOT BE CLUBBED HENCE REJECTED,0
+KINDLY PROVIDE TREATMENT PLANS TILL DOA TO DOD ,0
+AS PER THE DISCHARGE SUMMARY THE PATIENT IS ADMITTED IN THE HOSPITAL DUE TO LUMBAR PAIN AND AS PER THE USG REPORT THE GALL BALDDER IS NORMAL AND THE PATIENT IS REFERRED TO ANOTHER HOSPITAL FOR UROLOGICAL SURGERY. HENCE REJECTED.,0
+"Claim is submitted after 15 days of discharge of the Patient, therefore claim have been rejected",1
+Rejected alcohol related ,0
+"NAME MISMATCH IN D/S AND HD NOTES, CLAIM IS BEING REJECTED",1
+REJECTED AS SELECTED FOR PLANNED AND CT DONE BEFORE THE APPROVAL,1
+REJECTED BECAUSE THE SAME IS COVER UNDER DJ STENT PACKAGE ONLY.,0
+REJECTED AS PER POLICY TERMS AND CONDITIONS AS PREAUTH WAS INITIATED AFTER 5 DAYS OF ADMISSION,1
+"Claim submitted  15days after DOD, hence denied",1
+AS PER TMS CLAIM IS SUBMITTED AFTER 30 DAYS DISCHARGE OF PT,1
+REJECTED AS SURGERY DONE UNDER MEDICAL PKG,0
+rejected as surgical procedure done in medical management pacakge,0
+Outside Scope of cover (Exclusions as per scheme),0
+ct head not done due to headache hence rejected.,0
+CKD patient cant block this package kindly raise fresh with package code hence rejected ,0
+Reject as the submission is after 30 days,1
+ALREADY APPROVED ONE PACKAGE HENCE REJECTED  ,0
+CLAIM REJECTED AS PREAUTH INITIATED AFTER 5 DAYS OF ADMISSION AS TAT FOR  5 DAYS BACKDATE PREAUTH INITIATION HAS PASSED OUT HENCE REJECTED,1
+REJECTED AS CECT CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS MEDICAL AND SURGICAL PACKAGE PACKAGE CANNOT BE CLUBBED,0
+MEDICAL(POST OP) COMPLICATIONS WITHIN 15 DAYS OF SURGERY ARE COVERED IN SURGICAL PKG ITSELF,0
+REJECTED AS DRUG DEPENDENCE AND RELATED DISORDERS ARE NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+REJECTED DUE TO CLAIM SUBMITTED AFTER 30 DAYS ,1
+Double lumen line insertion cannot be paid seperately hence rejected,0
+"Mismatch in package taken,As the case is of neonatal,hence rejected",0
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, therefore claim can be rejected ",1
+CLAIM SUBMITTED AFTER 30 DAYS OF DISCHARGE DATE HENCE CLAIM REJECTED,1
+"As per IPD paper DOA is  24/2/2020,PreAuth is taken after 5days of admission of the patient,hence rejected",1
+REJECTED AS echo  CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+"DISCHARGE UPDATED MORE THAN 15 DAYS ,HENCE REJECTED ",1
+CLAIM REJECTED AS PATIENT ALREADY ADMITTED UNDER SURGICAL PACKAGE  DURING SAME PERIOD AND MEDICALAND SURGICAL PACKAGE CAN NOT BE CLUBBED TOGETHER HENCE REJECTED,0
+REJECTED AS NO PROCEDURE HAS DONE,0
+REJECTED AS PER DOCUMENTS PROVIDED PATIENT WAS ON ORAL MEDICATION,1
+ALCOHOL/SUBSTANCE ABUSE AND ITS RELATED DISEASES ARE NOT PAYABLE AS PER THE TERMS AND CONDITIONS HENCE REJECTED ,0
+"PLANNED Sx DONE BEFORE PREAUTH, REJECT",1
+REJECTED AS PREAUTH IS INITIATED AFTER DISCHARGE OF THE PATIENT AND AS INSTRUCTED BY IC,1
+REJECTED AS CLAIM IS SUBMITTED AFTER 30 DAYS OF DISCHARGE AS THIS WAS THE DAY CARE PROCESS,1
+"Past history already surgery package taken CASE/PS1/HOSP3P59662/PS328388, so as per tender pre op medical expenses covered in surgery package, hence rejected",0
+"Already package taken CASE/PS1/HOSP3G81086/PS323148,need for this package is not justified,hence rejected",1
+PRE AUTH INITIATED AFTER DISCHARGE OF PATIENT HENCE CANNOT BE PAID,1
+Rejected as the High End package is only payable when patient is adimtted in hospital for treatment. Single CT Scan claim  not payable. No DS,0
+"already paid,hence rejected",1
+Echo is not covered under this package and hence the claim is rejected.,0
+"claim submitted 30 days after the discharge, hence denied",1
+REJECTED AS MAXIMUM AMOUNT PAID UNDER THIS PACKAGE ALREADY UNDER CASE IDS CASE/HOSP3P12798/PS258250 AND CASE/HOSP3P12798/PS244143,0
+"3 times query raised for POST op. Angiogram report, showing stent and POST Stent flow, but not reverted back, hence rejected",1
+DISCHARGE IS NOT UPDATED BY HOSPITAL WITHIN 15 DAYS FROM DISCHARGE DATE HENCE REJETCED.,1
+REJECTED AS CECT /ENDOSCOPY CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS ECHO NOT COVERED UNDER THIS PACKAGE,0
+"As per the clinical notes diagnosis is alcohol abuser, this is exclusion as per the scheme, hence rejected",0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 17/01 /2020 AND CLAIM SUBMITTED ON 5/02/2020 AFTER 18 DAYS OF DISCHARGE HENCE REJECTED.,1
+REJECTED AS LAMA BEFORE SURGERY,1
+REJECTED DUE TO THIS PACKAGE ONLY PAYABLE IF CLUBBED WITH MEDICAL PACKAGE,0
+Rejected AS the diagnostic procedures are not allowed in this scheme as per Guideline by SHA,1
+Claim submitted after 15 days of discharge hence rejected,1
+QUERY IS ASKED FOR SCAR PHOTO AND POST OP X RAY FILM AND JUSTIFICATION BUT WHICH WAS NOT PROVIDED EVEN AFTER ASKING FOR 2 TIMES . HENCE REJECTED.,1
+Query not reverted kindly Hence reject.,1
+THE PACKAGE BLOCKED OS WRONG HENCE THIS CLAIM IS REJECTED,0
+"Pre-Auth initiated after 5 days of Admission and also after Discharge of the Patient, therefore claim has been rejected.",1
+HD NOTES NOT ATTACHED HENCE CLAIM IS BEING REJECTED,1
+REJECTED AS PCT TEST IS NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS MENTIONED IN D/S THAT PATIENT MANAGED CONSERVATIVELY,1
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, Hence claim is Not Payable",1
+"delayed submission of claims, hence rejected",1
+AS PER TMS CLAIM IS SUBMITTED AFTER 30 DAYS OF DISCHARGE OF THE PT ,1
+REJECTED AS PER DIAGNOSIS..ALCOHOL WITHDRAWAL AND RELATED AILMENTS ARE NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+REJECTED AS PREAUTH WAS  INITIATED AFTER DISCHARGE OF PATIENT,1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS CLAIM SUBMITTED  AFTER  18 DAYS OF DISCHARGE,1
+AS THIS BLOOD TRANSFUSION PACKAGE IS ALREADY PAID WITH THE SEVERE ANAEMIA PACAKGE TAKEN IN PAST HISTORY IN CASE/PS1/HOSP3P68104/PS323769. HENCE THIS IS REJECTED .,0
+QUERY NOT REVERTED ,1
+CLAIM REJECTED AS MEDICAL AND SURGICAL PACKAGE CAN NOT BE CLUBBED TOGETHER,0
+Claim submitted 15 days after discharge hence denied,1
+REJECT. NO EVIDENCE OF HEPATORENAL DYSFUNCTION SYNDROME PROVIDED EVEN AFTER QUERY ,1
+sign and stamp of district hospital smo in referral slip is not provided,1
+REJECTED AS PATIENT IS UNDER SURGICAL PACKAGE TILL 19/2/2020..MEDICAL AND SURGICAL PACKAGE CANNOT BE CLUBBED,0
+"MENTIONED SURGERY NOT DONE,POSTPONED,NOT PAYABLE,HENCE REJECTED ",1
+QUERY NOT REVERTED KINDLY HENCE REJECTED.,1
+Claim was submitted after 30 days of discharge hence rejected,1
+Rejected as the submission is after 3o days ,1
+AS ONE MORE PREAUTH INITIATED BLOCKING SAME FOE DOA 23/02/2020,1
+"AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF PT, THEREFORE CLAIM HAVE BEEN REJECTED",1
+REJECTED AS PRE AUTH INITIATED AFTER THE PATIENT DISCHARGE,1
+Recovery of process paid claim,1
+PATIENT WAS ON ORAL MEDICINE AND AS PER JUSTIFICATION PATIENT WAS ADMITTED FOR BT . ANOTHER  CLAIM FOR BT ALSO REGISTERED FOR SAME ADMISSION ,1
+REJECTED AS ALREADY APPROVED FOR LSCS UNDER CASE/HOSP3G81150/PS253578 FOR SAME DOA,1
+FINAL BILL 11473 IS MORE THAN PREAUTH AMOUNT 1800 HENCE CLAIM BEING REJECTED,1
+Rejected as the submission period is Finished  for  Dialysis cases for Pvt Hospitals  (Discharged on 26/2 and submission on 20/3),1
+"misuse or abuse of drugs or alcohol or use of intoxicating substances, or such abuse or addiction ARE NOT PAYABLE HENCE REJECTED",0
+REJECTED AS PATIENT REFERRED TO ANOTHER HOSPITAL BEFORE DELIVERY ,1
+REJECTED AS SURGERY NOT DONE,1
+"Please block correct package, no any relative symptom of enteric fever . case of Renal/ uretric stone, so block according that package",0
+Package Selection : Mismatch of package and disease/diagnosis/treatment/gender/age,0
+REJECTED AS RADIOTHERAPY IS NOT GIVEN,1
+Surgery is done prior to the approval and hence the claim stands rejected.,1
+"PreAuth is raised after 5days of admission of the patient,hence rejected",1
+REJECTED DUE TO LATE CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+REJECTED AS DISCHARGE SUMMARY NOT PROVIDED,1
+rejected as per hospital request,1
+REJECTED AS PROCEDURE NOT COVERED UNDER THIS PACKAGE,0
+"PPD approved for viral hepatitis, but in discharge summary diagnosis is ALD, so this is exclusion as per the scheme, hence rejected",0
+REJECTED AS RADIOTHERAPY WAS NOT GIVEN,1
+cpd rejected delayed submission of claims,1
+"POST OP USG KUB X RAY WITH DJ STENT WAS NOT PROVIDED,HENCE REJECTED ",1
+REJECTED AS HRCT IS NOT COVERED UNDER THIS PACKAGE,0
+CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE OF THE PATIENT HENCE CLAIM HAS BEEN REJECTED ,1
+"DISCHARGE SUMMARY, FINAL BILL NOT ATTACHED, CLAIM REGISTERED ON 25/2/20 BUT PREAUTH INITIATED ON 1/3/20 , CLAIM IS BEING REJECTED",1
+AS PER TMS CLAIM IS SUBMITTED AFTER 30 DAYS DISCHARGE OF THE PT,1
+CLAIM REJECTED AS PATIENT WAS ONLY ON ORAL MEDICATION AND ALSO HOSPITALIZATION NOT JUSTIFIED PATIENT CAN BE MANAGED ON OPD BASIS AS PATIENT DOES NOT HAVE HIGH GRADE FEVER,1
+PROCEDURE IS WRONGLY BLOCKED HENCE REJECTED,0
+CLAIM REJECTED AS PATIENT REFER TO HIGHER CENTER FOR NON PROGRESSIVE LABOUR AND ND NOT DONE,1
+ REJECTED AS CECT  CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+DISCHARGE IS LESS THAN 24 HOURS. HENCE REJECTED.,1
+"AS PER THE  HOSPITAL REMARKS , COLOUR DOPPLER IS NOT DONE AND HENCE THE PACKAGE BLOCKED IS NOT DONE AND IS NOT JUSTIFIED. HENCE REJECTED.",1
+FINAL BILL 21780 IS MORE THAN PREAUTH AMOUNT 11880 HENCE CLAIM BEING REJECTED,1
+case rejected as laparoscopic chole selected and TAH done,0
+REJECTED AS PREAUTH INITIATED AFTER 5 DAYS TAT,1
+CASE/HOSP3G81129/PS260465 Duplicate claim,1
+BT NOTES AND FINAL BILL FOR BT NOTES NOT FOUND HENCE CLAIM IS BEING REJECTED,1
+DISCHARGE NOT UPADATED BY HOSPITALS WITHIN 15 DAYS FROM DISCHARGE DATE AND THE QUERY DOCUMENTS AE NOT PROVIDED EVEN AFTER ASKING FOR MULTIPLE TIMES AND THE DOCUMENT PROVIDE IS NOT JUSTIFYING THE PACKAGE BLOCKED . HENCE REJECTED.,1
+"AS PER DISCHARGE SUMMARY,DIAGNOSIS MENTIONED AS ALD,IT WAS NOT MENTIONED IN PREAUTH DOCUMENTS,ALCOHOL IS EXCLUSION,HENCE REJECTED  ",0
+REJECTED AS TREATING DOCTOR LETTER PROVIDED THAT HEPATOCELLULAR CA COULD BE DUE TO ALCOHOL ABUSE IN PATIENT,0
+REJECTED AS HRCT  CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS CLAIM SUBMITTED AFTER 30 DAYS OF DEATH,1
+"AS PER SUBMITTED DOCUMENTS PATIENT IS CHRONIC ALCOHOLIC AND AS PER GUIDELINES Diseases, illness or injury due to or arising from use, misuse or abuse of drugs or alcohol or use of intoxicating substances, or such abuse or addiction are not payable HENCE REJECTED",0
+DISCHARGE LESS THAN 24 HOURS.HENCE REJECTED.,1
+CLAIM SUBMITTED AFTER 15 DAY OF THE PATIENT DISCHARGE HENCE REJECTED ,1
+REJECTED AS CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE DOD AS PER D/S 28/2/2020,1
+Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient . Hence rejected,1
+"Already PCNL package paid in past history, so this package amount also covered in surgery package, hence rejected",0
+REJECTED AS WRONG PACKAGE SELECTED FOR DISLYSIS,0
+REJECTED AS PATIENT IS UNDER MEDICAL ADMISSION..MEDICAL AND SURGICAL PACKAGE CANNOT BE CLUBBED,0
+REJECTED AS PREAUTH INITIATED AFTER PLANNED PROCEDURE IS DONE,1
+"Claim submitted 30 days after discharge, hence denied",1
+"DATE MISMATCH IN HD NOTES , REJECTED",1
+"CLAIM REJECTED AS PATIENT IS CHRONIC ALCOHOLIC Diseases, illness or injury due to or arising from use, misuse or abuse of drugs or alcohol or use of intoxicating substances, or such abuse or ADDICTION ARE NOT PAYABLE",0
+REJECTED AS CECT CHEST IS NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS SURGERY WAS NOT DONE,1
+"Additional information(Provide Self-declaration with detailed narration of injury, mentioning date, place andÂ time. MLC/FIR copy if any.)ALCOHOLIC INTOXCATION AT THE TIME OF RSA ",1
+Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient . Hence rejected.,1
+REJECTED AS CECT CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+CLAIM REJECTED AS POST OP MEDICAL MANAGEMENT COVERED UNDER SURGICAL PACKAGE FOR UP TO 7 DAYS AND AS  ENHANCEMENT INITIATED AFTER DISCHARGE HENCE PAYABLE FOR ONLY 1 DAY (16/03) WHICH CAN BE COVERED UNDER SURGICAL PACKAGE ,1
+FINAL BILL 2270 IS MORE THAN PREAUTH AMOUNT 2200 HENCE CLAIM BEING REJECTED,1
+"Surgical package blocked on 19/3, medical management covered under it hence rejected",1
+REJECTED DUE TO PRE AUTH INITIATED AFTER 5 DAYS OF ADMISSION,1
+REJECTED AS PATIENT WAS ON ORAL MEDICATION,1
+REJECTED AS PATIENT MANAGED OPERATIVELY..MEDICAL AND SURGICAL PACKAGE CANNOT BE CLUBBED,0
+DISCHARGE LESS THAN 24 HOURS HENCE REJECTED.,1
+"As per the past history surgical package taken already CASE/PS1/HOSP3P19597/PS293250 (PCNL), so as per the tender pre op expenses also covered in surgical package, hence rejected",0
+REJECTED AS ALCOHOL RELATED ,0
+"CLAIM ALREADY PAID FOR THE SAME, CASE/HOSP3G99957/PS187012 HENCE REJECTED  ",1
+AS PER PPD REMARKS HENCE REJECTED ,1
+REJECTED AS PREAUTH WAS INITIATED AFTER 5 DAYS OF ADMISSION AND ONE MORE AUTH CASE/PS1/HOSP3P28996/PS333796  UNDER PROCESS UNDER SAME ADMISSION FOR REGISTRATION DATE 20/3/2020...DOD UNDER THIS IS 25/3/2020,1
+QUERY IS ASKED FOR DIALYSIS CHART AND WHICH IS NOT PROVIDED AND QUERY IS ASKED 2TIMES AND WHICH IS NOT REPLIED PROPERLY. HENCE REJECTED.,1
+"CLAIM REJECTED AS PATIENT IS CHRONIC ALCOHOLIC AND Diseases, illness or injury due to or arising from use, misuse or abuse of drugs or alcohol or use of intoxicating substances, or such abuse or addiction  ARE NOT PAYABLE",0
+REJECTED AS SAME ON BED PHOTO IS PROVIDED IN PREVIOUS CLAIMS ALSO,1
+REJECTED AS PATIENT IS ON ORAL MEDICATION AS PER DOCUMENTS PROVIDED,1
+"HD CHART NOT ATTACHED , HENCE CLAIM IS BEING REJECTED",1
+"CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE OF PATIENT,HENCE REJECTED  ",1
+"Pt Admitted on 1st Feb 2020 but Pre Auth initiated on 13th Feb 2020, i.e after 13 days of admission Hence claim is not Payable",1
+REJECTED DUE TO DELAYED CLAIM SUBMISSION AFTER 30 DAYS OF PATIENT DISCHARGE,1
+REJECTED AS CLAIM SUBMITTED AFTER DISCHARGE OF THE PATIENT AND AS INSTRUCTED BY IC,1
+ALCOHOLIC AND ITS RELATED DISEASES ARE NOT PAYABLE AS PER THE  POLICY TERMS AND CONDITIONS HENCE REJECTED ,0
+SURGICAL PROCEDURE DONE..MEDICAL AND SURGICAL PACKAGE CANNOT BE CLUBBED,0
+"AS PER DISCHARGE SUMMARY , THE PATIENT IS A CASE OF ALD, BUT IN PREAUTH THEY BLOCKED FOR PUO AND PUO DOCUMENTS PROVIDED SO PPD APPROVED. HENCE REJECTING THIS CASE IN CPD.",0
+"As per document provide DOA is 9/3/2020,PurAuth is raised after 5days of admission of the patient,hence rejected",1
+REJECTED AS CLAIM IS SUBMITTED AFTER 30 DAYS OF PATIENT ACTUAL DISCHARGE,1
+CLAIM REJECTED AS HD NOT DONE ,1
+rejected as injections are not payable as per guidelines ,0
+DELAYED SUBMISSION OF CLAIMS,1
+REJECTED AS DUPLICATE CLAIM ALREADY BLOCKED UNDER CASE ID CASE/PS1/HOSP3G81376/PS271346 ,1
+DELIVERY NOT DONE,1
+rejected as chronic alcoholic case,0
+REJECTED DUE TO DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCAHRGE,1
+AS ONE MORE PREAUTH INITIATED BLOCKING SAME FOR DOA 28/01/2020,1
+"Rejected as claim is submitted after 30 days of Discharge of the patient, ",1
+REJECTED AS PATIENT WAS ON ORAL MEDICATION AS PER DOCUMENTS PROVIDED,1
+AS PER AUDIT REMARKS NO SPECIALIST AVAILABLE HENCE REJECTED ,1
+Claim submitted 30 days after the DOD and hence rejected.,1
+DISCHARGE UPDATED AFTER 15 DAYS HENCE REJECTED  ,1
+CLAIM REJECTED AS SAME PACKAGE BLOCKED UNDER CASE ID CASE/HOSP3P53909/PS241379 AND THIS PACKAGE CAN BE PAID ONCE PER ANNUM,0
+REJECTED AS PREAUTH WAS INITIATED AFTER 5 DAYS OF ADMISSION ON DOD,1
+"As Per Claim Audit Surgery Not done, Hence claim is not Payable",1
+"query not reverted document mismatch ,pt name sunita but document provide mandeep singh hence rejected.",1
+Reject as The given documents Suggest that Surgery has not Done,1
+as per discharge summary mismatch diagnosis hence rejected ,1
+FINAL BILL 13860 IS MORE THAN PREAUTH AMOUNT  9900 HENCE CLAIM IS BEING REJECTED,1
+REJECTED AS PREAUTH IS INITIATED AFTER DISCHARGE OF PATIENT,1
+Rejected as the submission is 2 month late ,1
+REJECTED AS MEDICAL AND SURGICAL PACKAGES CANNOT BE CLUBBED,0
+"HD CHART NOT ATTACHED FOR THIS ENHANCEMENT DATE,ALREADY PAID FOR 23/1/2020 AS PER GIVEN HD CHART,HENCE REJECTED ",1
+REJECTED AS CONSERVATIVE MNGT DONE,1
+"Wrong discharge summary, Date mismatch in discharge summary, Dialysis procedure note is note signed by doctor",1
+REJECTED AS OPTED PLANNED PROCEDURE AND PREAUTH INITIATED AFTER PROCEDURE IS DONE AND ON BED PHOTO PROVIDED IS OF 15/1/2020,1
+CLAIM SUBMITTED AFTER 15 DAYS (TAT PERIOD) FROM DISCHARGE DATE ,1
+"SURGICAL PACKAGE TAKEN ON 24/3 ,AS PER SCHEME THIS IS PRE OPERATIVE MEDICAL TREATMENT WAS INVOLVED IN THE SAME SURGICAL PACKAGE ,HENCE REJECTED ",1
+CLAIM REJECTED AS HOSPITAL HAS OPTED FOR PLANNED PROCEDURE AND PROCEDURE DONE BEFORE APPROVAL  CASE REJECTED AS CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE AND ALSO PROCEDURE HAS DONE BEFORE APPROVAL. CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 31/1/2020 AND CLAIM SUBMITTED ON 16/02/2020 AFTER 17 DAYS OF DISCHARGE HENCE REJECTED. PROVIDE  ALSO PROVIDE FINAL BILL. AND ALL THE INVESTIGATION DONE DURING HOSPITALIZATION. HOSPITAL HAS OPTED FOR PLANNED PROCEDURE AND PROCEDURE DONE BEFORE APPROVAL HENCE REJECTED,1
+CLAIM REJECTED AS PATIENT WAS ONLY ON ORAL MEDICATION HENCE HOSPITALIZATION NOT JUSTIFIED,1
+ALCOHOL AND ITS RELATED DISEASES ARE NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED ,0
+REJECTED AS ON REPEATED QUERIES REQUESTED DOCUMENTS WERE NOT PROVIDED,1
+"Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient,hence rejected",1
+REJECTED AS ALCOHOLIC AND ITS RELATED DISEASES ARE NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE THIS IS REJECTED,0
+REJECTED AS CLAIM SUBMITTED AFTER 30 DAYS,1
+"Inadequate query reply even after multiple queries, hence denied",1
+"Claim submitted after 15 days of discharge of the patient, hence denied.",1
+REJECTED AS ENDOSCOPY CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+"As per the summary diagnosis is ALD, this can not be paid as per the scheme, hence rejected",0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT ,1
+CLAIM REJECTED AS NO SURGERY DONE,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF THE PT,1
+REJECT AS PAR PACKAGE CANT BLOCK SEPERATE,0
+REJECTED AS CT NOT COVERED UNDER THIS PACKAGE,1
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE OF PATIENT,1
+"Delayed claim submission 30 days after the discharge, hence denied",1
+FINAL BILL  19800  IS MORE THAN PREAUTH AMOUNT 15840 HENCE CLAIM BEING REJECTED,1
+"as  package blocked for septicemia but as  per discharge summary patient is known case of ,chirosis of liver ,chronic alcoholic ,hence rejected  ",0
+"Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient, therefore claim has been rejected as per SHA INSURER instructions",1
+"Claim is submitted after 30 days of Discharge of the patient,hence rejected.",1
+"Claim submitted by hospital is after 15days of discharge of patient,hence rejected",1
+REJECTED DUE TO SURGICAL AND MEDICAL PACKAGES CANNOT BE CLUBBED,0
+"AS PER CBC REPORT HB WAS 12.3 ON 28/01/2020 HENCE CLAIM FOR BT NOT JUSTIFY , REJECTED",1
+" As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim rejected as per IC instructions",1
+CLAIM REJECTED AS PREAUTH INITIATED AFTER 5 DAYS OF ADMISSION,1
+"DOD 23/3/20 AND CLAIM INITIATED ON 13/4/20 I.E. AFTER MORE THAN 15 DAYS, HENCE CLAIM IS BEING REJECTED",1
+Preauth is initiated after discharge of patient hence cannot be paid as per guidelines,1
+REJECTED AS MRI CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+Delayed or no query reply ,1
+"CLAIM REJECTED AS WRONG PACKAGE BLOCKED,PACKAGE BLOCKED FOR ENDOSCOPY UNDER BLOOD TRANSFUSION",0
+"As per the past history same package taken on same day CASE/PS1/HOSP3P65756/FS304556, hence rejected",1
+REJECTED AS NO PROCEDURE DONE,1
+"PreAuth initiated after 5days of admission of the patient,hence rejected ",1
+"PRE AUTH INITIATED AFTER THE PATIENT DISCHARGE, HENCE REJECTED",1
+REJECTED AS PFT CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+REJECTED  DUE TO DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+"After repeated query raised hospital not provided the documents,hence rejected",1
+REJECTED AS WRONG PKG BLOCKED...Haemodialysis/Peritoneal Dialysis (only for ARF) - per session(M100070) TO BE BLOCKED ONLY IF PATIENT IS ALREADY UNDER MEDICAL ADMISSION FOR AKI..PATIENT IS NOT UNDER MEDICAL ADMISSION,0
+REJECT BASED UPON VERIFICATION,1
+HD DONE 22/1/ 20  I.E. 4 DAYS BEFORE PREAUTH 26/1/20 . CLAIM IS BEING REJECTED,1
+NA,1
+"SURGERY NOT DONE, HENCE DENIED",1
+approved for this package S100251 for ckd patient ,0
+Rejected as total 2 month late submission,1
+"Claim submitted by hospital is after 15days of discharge of patient,hence rejected ",1
+Delay in claim submission for two months,1
+KINDLY UPLOAD REPORT OF THE TEST DONE ,1
+"as per preauth remark...As per provided clinical photo need for ICU enhancement is not justified,Kindly take HDU or routine ward,hence rejected",1
+REJECTED AS CECT /ECHO CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS AFTER 30 DAYS TAT APPROVED,1
+PREAUTH INITIATED AFTER 5 DAYS OF ADMISSION AND AFTER DISCHARGE OF THE PATIENT HENCE REJECTED ,1
+"AS PER PREAUTH DOCUMENTS ,NOT GIVEN ALD ,IN DISCHARGE SUMMARY ,MENTIONED AS ALD,ALCOHOL IS EXCLUSION,HENCE REJECTED ",0
+REJECTED AS THIS PACKAGE TO BE CLUBBED WITH ONLY MEDICAL PACKAGE..PATIENT IS NOT UNDER MEDICAL ADMISSION,1
+AS PER THE HOSPITAL REMARK  THE PACKAGE IS WRONGLY BLOCKED HENCE REJECTED.,0
+REJECTED AS HOSPITAL OPTED PLANNED PROCEDURE AND PROCEDURE WAS DONE BEFORE PREAUTH APPROVAL,1
+CLAIM SUBMITTED AFTER 30 DAY OF PATIENT DISCHARGE HENCE REJECTED ,1
+REJECTED AS HD CHART NOT PROVIDED,1
+WRONG PACKAGE BLOCKED AS PACKAGE BLOCKED FOR PFT AND OTHER INVESTIGATION UNDER BT PACKAGE,0
+KINDLY PROVIDE THE HD CHART OF 26/2/2020 AS THE ONE PROVIDED IS 17/2/2020.,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 30 DISCHARGE OF PT,1
+REJECTED AS WRONG PACKAGE WAS BLOCKED,0
+"As per provided discharge summary patient is diagnose with ALD,rejected As per exclusion of the policy",0
+REJECTED AS CECT  CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+REJECTED AS MRI CT CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+rejected as claim already paid on same date for same procedure ,1
+REJECTED DUE TO DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF  PATIENT DISCHARGE ,1
+"As per the summary diagnosis is ALD (alcoholic liver disease), this is exclusion as per the scheme, hence rejected",0
+REJECTED AS PATIENT UNDER MEDICAL ADMISSION TILL 27/1/2020..MEDICAL AND SURGICAL PACKAGE CANNOT BE CLUBBED,0
+"REJECTED AS Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient, therefore claim has been rejected. ",1
+AS PER AUDIT REMARKS NO SPECIALIST AVAILABLE HENCE REJECTED,1
+REJECTED AS ENDOSCOPY IS NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS PLANNED PROCEDURE OPTED BY HOSPITAL WAS DONE BEFORE PREAUTH APPROVAL AND PREAUTH WAS INITIATED AFTER 5 DAYS OF ADMISSION,1
+delayed submission of  documents,1
+PACKAGE WRONGLY BLOCKED HENCE THIS CLAIM IS REJECTED,0
+DELAYED SUBMISSION OF CLAIM.,1
+"already package paid and inclusive in past history for s. anemia on 28/2 , hence rejected",1
+REJECTED AS WRONG PACKAGE BLOCKED FOR HRCT CHEST,0
+Critical Care Neonatal Package ALREADY APPROVED HENCE REJECTED ,1
+REJECTED AS PATIENT WAS MANAGED CONSERVATIVELY AND REFERRED,1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 20/01/2020 AND CLAIM SUBMITTED ON 11/02/2020 AFTER 21 DAYS OF DISCHARGE HENCE REJECTED.,1
+"TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim can be rejected",1
+QUERY FOR VITAL CHART AND PATIENT PHOTO DURING TREATMENT NOT REVERTED HENCE CLAIM REJECTED,1
+Provided case is fracture femur. package blocked is for radius.So provide right case papers ,0
+"CLAIM SUBMITTED 15 DAYS AFTER DISCHARGE ,HENCE REJECTED",1
+Approved rs 1000 per day care treatment,0
+THE PROCEDURE IS NOT PAYABLE AND PACKAGE IS WRONGLY BLOCKED HENCE THIS CLAIM IS REJECTED,1
+REJECTED AS CHEMOTHERAPY IS NOT GIVEN,1
+CLAIM REJECTED AS PACKAGE BLOCKED FOR MEDICAL MANAGEMENT OF ANEMIA AND SURGERY (D AND C ) HAS DONE HENCE REJECTED,0
+CLAIM REJECTED AS SURGERY HAS DONE BEFORE APPROVAL AS IT WAS PLANNED PROCEDURE CAN NOT BE DONE BEFORE PREAUTH APPROVAL,1
+CLAIM SUBMITTED AFTER  15 DAYS OF PATIENT DISCHARGE HENCE REJECTED ,1
+REJECTED AS PATIENT IS PN ORAL MEDICATION CAN BE MANAGED AS OPD,1
+REJECTED AS DAY TO DAY TREATMENT WAS NOT GIVEN,1
+"AS PER THE DISCHARGE SUMMARY , COMPLICATION OF DM IS THE DIAGNOSIS AND PACKAGE BLOCKED IS AKI AND. HENCE BLOCK THE CORRESPONDING PACKAGE FOR THIS CASE.HENCE REJECTED.",1
+REJECTED CANT BE PAID SEPERATELY,1
+REJECTED AS DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+"Duplicate case CASE/HOSP3P14817/PS259856, claim already paid, so this claim not justified, hence rejected",1
+FINAL BILL 13860 IS MORE THAN PREAUTH AMOUNT 9900 HENCE CLAIM BEING REJECTED,1
+"kindly provide dialysis chart Claim submitted by hospital is more than 15 days after patient discharged, hence rejected",1
+DELAYED SUBMISSION OF CLAIMS.,1
+delayed submission of claims. hence rejected.,1
+"Claim is submitted after 5 days of Discharge of the patient, therefore claim has been rejected.",1
+"Referred patient,hence rejected",1
+"REJECTED ,AS PER SHA DIRECTION ",1
+REJECTED AS CONSERVATIVE MANAGEMENT FOR POST OP COMPLICATION FROM DOD TILL 15 DAYS IS COVERED UNDER SURGERY PACKAGE,1
+REJECTED AS TEST NOT DONE,1
+"Hospital did not reverted for query , hence denied",1
+REJECTED AS CT CHARGES ARE NOT COVERED UNDER THIS PACKAGE,0
+"CLAIM ALREADY APPROVED FOR CASE/PS1/HOSP3P65756/FS301112 FOR SEVERE ANEMIA,THIS PACKAGE INCLUDES IN SEVERE ANEMIA,PPD AUTO APPROVED ,HENCE REJECTED ",0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 1/2/2020 AND CLAIM SUBMITTED ON 19/02/2020 AFTER 18 DAYS OF DISCHARGE HENCE REJECTED. ,1
+REJECTED AS CLAIM SUBMITTED AFTER 30 DAYS AFTER  DISCHARGE,1
+PATIENT WAS NOT ON ICU VENTILATOR WRONG WARD PACKAGE OPTED HENCE REJECTED,1
+REJECTED AS CLAIMSUBMITTED AFTER 15 DAYS OF DISCHARGE,1
+"PreAuth initiated after 5days of admission of the patient,hence rejected",1
+"PATIENT NOT ADMITTED FOR DELIVERY AS PER REMARK, CLAIM IS BEING REJECTED",1
+THE PACKAGE IS WRONGLY BLOCKED HENCE THIS CLAIM IS REJECTED,0
+Claim initiated after 30 days of discharge hence rejected,1
+"As per the given documents PPD approved for severe anemia, but as per the summary and clinical notes diagnosis is ALD, this is exclusion as per the scheme, hence rejected",0
+REJECTED AS MEDICAL MNGT FOR POST OP COMPLICATIONS TILL 15 DAYS ARE COVERED WITHIN SURGERY PACKAGE ITSELF,0
+Claim is submitted after 30 days of Discharge of the patient,1
+"As there is no delivery,need for this package is not justified,hence rejected",1
+AS PER EXCLUSION POLICY ,0
+"Discharge documents submitted after 18 days of discharge, TAT of 15 days for submission of claims is passed out, Hence claim is not Payable Discharge documents submitted after 18 days of discharge, TAT of 15 days for submission of claims is passed out, Hence claim is not Payable",1
+Delay in claim submission   ( 20/01/2020 and 31/03/2020 about two months),1
+AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF PT,1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS CLAIM SUBMITTED AFTER 18 DAYS OF DISCHARGE,1
+SURGERY NOT DONE HENCE REJECTED,1
+case rejected as claim submitted after 15 days of discharge,1
+BT NOTES AND FINAL BILL FOR BT IS NOT FOUND HENCE CLAM IS BEING REJECTED,1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 13/01/2020 AND CLAIM SUBMITTED ON 31/01/2020 AFTER 17 DAYS OF DISCHARGE HENCE REJECTED.,1
+REJECTED AS ALREADY CLAIM IS UNDER PROCESS UNDER CASE/PS1/HOSP3G81094/PS280775 FOR SAME DATES..SAME DOCUMENTS WERE PROVIDED IN BOTH CLAIMS,1
+REJECTED ASA PREAUTH INITIATED AFTER DISCHARGE OF PATIENT,1
+"HD DONE BEFORE MORE THAN 3 DAYS OF PREAUTH, REJECT",1
+CLAIM SUBMITTED AFTER 15 DAYS FROM DISCHARGE OF THE PATIENT HENCE REJECTED ,1
+REJECTED AS ONE MORE CLAIM UNDER MEDICAL PKG UNDER  PROCESS FOR SAME DOA FOR SAME PATIENT,1
+REFERRED TO ANOTHER HOSPITAL BEFORE THE SURGERY,1
+REJECTED S MRI BRAIN NOT COVERED UNDER THIS PACKAGE,0
+"Duplicate claim, already booked under ID CASE/HOSP3G82905/PS248071 ",1
+"oral medications are not payable, hence denied",0
+REJECTED AS BT CHARGES ARE COVERED IN SURGERY PACKAGE ITSELF,0
+REJECTED AS CLAIM IS SUBMITTED AFTER 30 DAYS OF ACTUAL DISCHARGE,1
+"Claim submitted 30 days after the discharge of the patient,hence denied",1
+"LAMA  BEFORE SURGERY,HENCE CASE REJECTION..",1
+"As per the discharge summary diagnosis is ALD, this is exclusion as per the scheme, hence rejected",0
+Approved as per package,1
+case rejected as patient could have been taken for PTCA after CAG but opted for blocking multiple packages and admission and management too covered in PTCA package hence rejected,0
+"REJECTED  Claim is submitted after 30 days of Discharge of the patient,",1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim rejected as per IC instructions",1
+REJECTED AFTER 5 DAYS TAT ,1
+REJECTED AS CECT /ENDOSCOPY CHARGES ARE NOT COVERED UNDER THIS PACKAGE REJECTED AS CECT /ENDOSCOPY CHARGES ARE NOT COVERED UNDER THIS PACKAGE ,0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 14/01/2020 AND CLAIM SUBMITTED ON 05/02/2020 AFTER 21 DAYS OF DISCHARGE HENCE REJECTED. ,1
+Reject  ,1
+FINAL BILL 52120 IS MORE THAN PREAUTH AMOUNT 21600 HENCE CLAIM BEING REJECTED,1
+Procedure not done hence reject,1
+REJECTED AS INVESTIGATIONS NOT COVERED UNDER THIS PACKAGE,0
+REJECTED AS PROCEDURE ABANDONED,0
+REJECTED AS PATIENT ADMITTED FOR SURGERY ON 20TH AND PREOPERATIVE COVERED 5 DAYS BEFORE,1
+The procedure does not come under the said package and hence the CPD is rejected.,0
+PRE AUTH INITIATED AFTER 5 DAYS OF ADMISSION HENCE THIS CLAIM IS REJECTED,1
+Approve ,0
+REGRETTED DUE TO DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+PATIENT WILLING IS NOT ACCEPTABLE IN REFERRAL SLIP HENCE REJECTED,1
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, hence  rejected",1
+"REJECTED AS Claim is submitted after 15 days of Discharge of the patient, ",1
+REJECTED AS WRONG PACKAGE BLOCKED FOR CT,0
+"As per preauth remark.. provided clinical photo need for ICU enhancement is not justified,Kindly take HDU or routine ward,hence rejected",1
+"DISCHARGE UPDATED MORE THAN 15 DAYS ,HENCE REJECTED  ",1
+"DISCHARGE UPDATED AFTER 15 DAYS,HENCE REJECTED ",1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 29/1/2020 AND CLAIM SUBMITTED ON 16/02/2020 AFTER 17 DAYS OF DISCHARGE HENCE REJECTED.,1
+TAMPERING OF ALL DOCUMENTS.,1
+CLAIM SUBMITTED AFTER 15 DAYS (TAT PERIOD) OF DISCHARGE DATE  HENCE CLAIM HAS BEEN REJECTED ,1
+"AS PER REPORT HB 10.19 , BT NOTE NOT FOUND CLAIM IS BEING REJECTED",1
+SURGERY NOT DONE,1
+"CLAIM IS SUBMITTED AFTER MORE THAN 15 DAYS OF DISCHARGE,HENCE CLAIM IS BEING REJECTED",1
+"Already package taken CASE/PS1/HOSP3P14817/PS293316,need for this package is not justified,hence rejected",1
+"FINAL BILL AMOUNT 30690 IS MORE THAN  PREAUTH AMOUNT 25740, CLAIM IS BEING REJECTED FOR  FALSE BILL",1
+REJECTED AS PREAUTH WAS INITIATED AFTER PROCEDURE IS DONE,1
+PROCEDURE NOT DONE HENCE REJECTED ,1
+SURGICAL AND MEDICAL PACKAGE CAN NOT BE CLUBBED TOGETHER HENCE REJECTED,0
+since severe anemia package is also blocked with this package. these two packages cannot be clubbed together since tt for severe anemia is itself bt,0
+THE PACKAGE IS WRONGLY BLOCKED HENCE REJECTED,0
+Preauth initiated after discharge of patient hence reject,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 30 DAYS DISCHARGE OF PT ,1
+AS PER TMS CLAIM  IS SUBMITTED AFTER 30 DAYS OF DISCHARGE OF THE PT,1
+REJECTED AS STENT REMOVAL CHARGES ARE COVERED IN SURGERY PACKAGE ITSELF,0
+REJECTED AS THIS PACKAGE TO BE BLOCKED ONLY IF PATIENT IS UNDER MEDICAL ADMISSION,1
+REJECTED AS CLAIM INITIATED AFTER 15 DAYS,1
+AS THIS PACKAGE IS PAID WITH THE MEDICAL PACKAGE TAKEN IN CASE/PS1/HOSP3P23204/PS296696 AND HENCE IT IS REJECTED.,1
+"HD DONE BEFORE PREAUTH , REJECT",1
+"REJECT As per TMS, Pre-Auth is initiated after 5 days of admission ",1
+REJECTED AS PATIENT WAS ON ORAL MEDICATION AS PER DOCUMENTS PROVIDED..APPROVAL CANNOT BE GIVEN FOR CAG UNDER THIS MEDICAL PACKAGE,1
+"Surgical package taken already CASE/HOSP3P13813/PS249475, so medical package not justified, hence rejected",1
+"Pre-Auth is initiated after 5 days of admission and also after discharge of the Patient, therefore claim have been rejected  and as instructed by IC",1
+"After repeated query raised,hospital not provided,hence rejected",1
+"rejected as Pre-Auth is initiated after 5 days of Admission and after Discharge of the Patient, hence claim rejected.",1
+REJECTED DUE TO DELAY SUBMISSION OF CLAIM,1
+surgery pkg CASE/HOSP3P15615/PS258356 taken hence rejected ,0
+REJECTED AS PER DOCUMENTS PROVIDED PATIENT IS ON ORAL MEDICATION,1
+REJECT AS PER PAST HISTORY SURGICAL PACKAGE ALREADY TAKEN CASE/PS1/HOSP3P57220/PS324847,0
+"Claim is submitted by hospital is after 15days of discharge of patient,hence rejected",1
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE AND CLAIM SUBMITTED AFTER 15 DAYS OF DISCHARGE,1
+REJECTED AS WRONG PACKAGE BLOCKED..USG GUIDED ASPIRATION IS NOT COVERED UNDER THIS PACKAGE,0
+Rejected as the submission is  after 15 days ,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF THE PT ,1
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 19/01/2020 AND CLAIM SUBMITTED ON 05/02/2020 AFTER 16 DAYS OF DISCHARGE HENCE REJECTED. ,1
+RECOVERY AMOUNT DEDUCTED.,0
+QUERY NOT REVERTED HENCE RAJECTED.,1
+"Claim submitted 30 days after the discharge, hence rejected",1
+reject. patient has been admitted on 20th and as per discharge summary next dialysis is on 26th CASE/PS1/HOSP3P57777/PS290356  but claim initiated on 24th and dates are tampered in discharge summary ,1
+REJECTED AS PATIENT ADMITTED FOR MEDICAL MNGT OF ANEMIA AS PER DOCUMENTS PROVIDED..DELIVERY NOT DONE,1
+"reject as As per the given documents diagnosis is self inflicted injury, this is exclusion as per the scheme",0
+"As per the past history already bilateral DJ stent package paid on December, so query raised for Present pre USG but not provided, so package blocked is not justified, hence rejected",1
+"reject as Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient,",1
+REJECTED AS NO EVIDENCE OF MEDICAL PACKAGE WHICH CAN BE CLUBBED,0
+WRONG PACKAGE BLOCKED AS PACKAGE BLOCKED FOR BLOOD TRANSFUSION BUT MRI HAS DONE ,0
+Delay in claim submission for three months,1
+ALREADY PAST HISTORY  THIS PACKAGE APPROVED HENCE REJECTED ,0
+REJECTED AS WRONG PACKAGE BLOCKED FOR ENDOSCOPY,0
+"After repeated query raised,hospital not provide documents,hence rejected",1
+As per Sha case has been rejected,1
+WRONG PACKAGE BLOCKED AS PACKAGE BLOCKED FOR CT INVESTIGATION UNDER BLOOD TRANSFUSION PACKAGE,0
+"PreAuth is initiated after 5days of admission of patient,hence rejected",1
+kindly block for appropriate package,0
+PRE AUTH INITIATED AFTER 5 DAYS OF ADMISSION HENCE REJECTED,1
+AS PER DISCHARGE SUMMARY PROVIDED PATIENT REFERRED TO ANOTHER HOSPITAL PROCEDURE NOT DONE HENCE REJECTED ,1
+"REJECTED, DUE TO CLAIM INITIATED AFTER 15 DAYS",1
+"AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF THE PT,THEREFORE CLAIM HAVE BEEN REJECTED",1
+REJECTED AS NO PROCEDURE DONE MENTIONED ON D/S,1
+REJECTED AS PATIENT ON ORAL MEDICATION AS PER DOCUMENTS PROVIDED AND UNDER U100 APPROVAL CANNOT BE GIVEN FOR CONSERVATIVE MNGT,0
+CLAIM REJECTED AS TAT OF 15 DAYS FOR SUBMISSION OF CLAIM IS PASSED OUT AS DOD WAS 31/1/2020 AND CLAIM SUBMITTED ON 16/02/2020 AFTER 16 DAYS OF DISCHARGE HENCE REJECTED.,1
+REJECTED AS HOSPITAL OPTED PLANNED PROCEDURE AND DONE BEFORE PREAUTH APPROVAL,1
+"As per the pre auth documents PPD approved for PUO, but as per the summary diagnosis is ALD, so this can not be paid as per the scheme, hence rejected",0
+"AS PER AUDIT REMARKS , NO SPECIALIST AVAILABLE . HENCE REJECTED.",1
+REJECTED DUE DELAYED IN CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+REJECTED DUE TO  DELAYED CLAIM SUBMISSION AFTER 15 DAYS OF PATIENT DISCHARGE,1
+CASE REJECTED AS MEDICAL MANAGEMENT DONE UNDER SURGICAL PACKAGE,0
+REJECTED AS DRUG ADDICTION AND RELATED AILMENTS ARE NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+REJECTED AS NO BED PHOTO IS PROVIDED,1
+"CLAIM SUBMITTED AFTER 30 DAYS OF DISCHARGE OF PATIENT,HENCE REJECTED  ",1
+The claim submission is beyond 30 days from the day of discharge and hence the claim is rejected.,1
+AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF THE PT THERE FORE CLAIM HAVE BEEN REJECTED ,1
+REJECTED AS MRI BRAIN IS NOT COVERED UNDER THIS PACKAGE,0
+"PATIENT NAME MISMATCH IN CLINICAL NOTES ( DARSHANA ) TREATMENT AND VITAL CHART  NOT ATTACHED, REJECT",1
+REJECTED AS PER SHA DIRECTION ,1
+"As per the past history surgical package already taken CASE/PS1/HOSP3P19597/PS287669 (Lap. cholecystectomy), so as per the tender pre op expenses covered in surgical package, hence rejected",0
+CASE REJECTED AS SAME PHOTO OF PREAUTH IS PROVIDED IN OTHER CLAIM AND PHOTO MISMATCHED,1
+"OT NOTES NOT PROVIDED ,AFTER MULTIPLE QUERIES HENCE REJECTED ",1
+CASE REJECTED AS PATIENT 15 DAYS TAT OF SURGERY NOT COVERED ,0
+"AS PER PREAUTH DOCUMENTS ,NO ALCOHOL HISTORY IS NOT AVAILABLE,BUT IN DISCHARGE SUMMARY,DIAGNOSIS MENTIONED AS ALD,ALCOHOL IS EXCLUSION,NOT PAYABLE,HENCE REJECTED ",1
+CLAIM REJECTED AS INSTEAD OF REPEATED REMINDERS HOSPITAL HAS NOT PROVIDED REQUIRED DOCUMENTS HENCE REJECTED,1
+CLAIM  REJECTED AS MEDICAL TREATMENT OF 7 DAYS COVERED UNDER SURGICAL PACKAGE BLOCKED AND PTCA PACKAGE ALREADY BLOCKED HENCE MEDICAL MANAGEMENT COVERED UNDER THIS FOR POST 7 DAYS OF SURGERY,1
+"Query not reverted ,Kindly provide post op KUB x ray film with DJ stent with pt. name  ",1
+CLINICAL PHOTO OF THE PATIENT DOES NOT JUSTIFY HEMODIALYSIS DONE,1
+"Claim submitted 30 days after discharge, hence denied ",1
+CLAIM REJECTED AS HOSPITAL HAS OPTED FOR PLANNED PROCEDURE AND PROCEDURE DONE BEFORE APPROVAL,1
+"As per the past history already surgical package taken on 17/03 PTCA double stent, so as per the tender pre operative medical package is covered in surgery package, hence rejected",0
+REJECTED DUE DELAYED CLAIM SUBMISSION AFTER 30 DAYS OF PATIENT DISCHARGE,1
+The claim is rejected due to the following reasons 1) Delay of 46 days for the claim submission 2) Pre auth initiation during/after discharge of the patient.,1
+"Not Approveable as this removal is already in package of DJ stenting, as per new guideline by SHA",0
+"PROCEDURE NOT MENTIONED IN DEATH SUMMARY, OT NOTES NOT ATTACHED, REJECT",1
+rejected as pre-auth is initiated after 5 days of Admission ,1
+Reject As the limit of claim submission is finished on 7/3 As patient discharged on 7/2. And you submitted on 20/3 after one and half month of it,0
+SAME  PACKAGE BLOCKED AS IN PAST HISTORY SAME PACKAGE BLOCKED CASE/PS1/HOSP3P91932/PS322014 HENCE REJECTED.,1
+"AS PER AUDIT REMARK ,NO SPECIALIST AVAILABLE,HENCE REJECTED  ",1
+Rejected as the submission is not within 15 days.,1
+REJECTED AS PROCEDURE FOR COSMETIC PURPOSE IS NOT PAYABLE AS PER POLICY TERMS AND CONDITIONS,0
+claim denied  as the package blocked for chest tube insertion is inclusive in medical management package  with claim id CASE/HOSP3P53909/PS262189,0
+As surgery not done ,1
+"OT NOTES AND POST USG NOT ATTACHED, HENCE CLAIM IS BEING REJECTED",1
+REJECTED AS WRONG PACKAGE BLOCKED..SKIN GRAFTING DONE,0
+CLAIM REJECTED AS PROCEDURE HAS DONE BEFORE APPROVAL,1
+Rejected as already approved by Dr Girish on 3rd feb,0
+REJECTED AS CLAIM HAS TO BE SUBMITTED WITH IN 15 DAYS,1
+QUERY DOCUMENT NOT PROVIDED AFTER QUERIES( DIALYSIS CHART ) HENCE REJECTED ,1
+DIALYSIS PACKAGE CAN NOT BE BLOCKED UNDER GENERAL MEDICINE AS NOT CLUBBED WITH ANY OTHER MEDICINE PACKAGE,0
+The claim is submitted after 30 days of discharge and hence rejected.,1
+"WARD NOT MENTIONED IN VITAL CHARTS, IN ICU BED SIDE PHOTO MONITOR NOT SHOWING ANY PARAMETER, ICU ADMISSION NOT JUSTIFIED , FINAL BILL FOR SELECTED PACKAGE NOT ATTACHED, CLAIM IS BEING REJECTED",1
+Already paid PCNL B/L in past hence rejected,1
+"Claim submitted by hospital is more than 15 days after patient discharged, hence rejected ",1
+CLAIM REJECTED AS HOSPITALIZATION NOT JUSTIFIED HENCE REJECTED,1
+"Claim is submitted after 15 days of Discharge of the patient, Hence claim is not Payable",1
+PROVIDE TREATMENT CHART,1
+CLAIM REJECTED AS PROCEDURE DONE BEFORE APPROVAL,1
+PACKAGE BLOCKED IS WRONG HENCE REJECTED,0
+REJECTED AS PROCEDURE DONE PRIOR TO APPROVAL,1
+"AS PER DISCHARGE SUMMARY,IT WAS MENTIONED AS ALCOHOLIC,AS ALCOHOL WAS EXCLUSION IN SCHEME,AND IN PPD DOCUMENTS IT WAS NOT MENTIONED,HENCE REJECTED ",0
+"AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF PT,",1
+"AS PER TMS CLAIM IS SUBMITTED AFTER 15 DAYS OF DISCHARGE OF THE PT, THEREFORE CLAIM HAVE BEEN REJECTED",1
+"Surgery not done, patient referred to other hospital, hence rejected (hospital selected special case type, so amount can not change)",1
+"Claims submitted 30 days after the discharge, hence denied",1
+Reject as The creatinine is not valid,1
+MEDICAL AND SURGICAL PACKAGES CANNOT BE CLUBBED HENCE THIS CALM REJECTED,0
+PREAUTH APPROVAL WAS GIVEN FOR TUBERCULOSIS BUT FINAL DIAGNOSIS IS ALD HENCE REJECTED.,0
+REJECTED AS DIAGNOSTIC PROCEDURE NOT DONE,0
+"CLAIM WAS SUBMITTED AFTER MORE THAN 15 DAYS OF DISCHARGE,HENCE CLAIM IS BEING REJECTED",1
+REJECTED AS CLAIM SUBMITTED AFTER15 DAYS,1
+ALCOHOLIC AND ITS RELATED DISEASES ARE NOT PAYABLE AS  PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED,0
+"PreAuth Initiated after 5 Days of Admission, Mismatch in admission date from Discharge summary and TMS",1
+Blocked for surgery but Surgery not done hence rejected,1
+The treatment is done at OPD level and hence the claim is rejected.,0
+REJECTED. CLAIM IS SUBMITTED AFTER 19 DAYS FROM DATE OF DISCHARGE  OF PATIENT.,1
+Approved 1800,0
+"Discharge documents submitted after 57 days of discharge, TAT of 30 days for submission of claims is passed out, Hence claim is not Payable",1
+query not reverted hence rejected. ,1
+Claim submitted after 30 days of discharge of patient hence rejecetd,1
+TWO POST USG ARE PROVIDED OF SAME DATE OF 30 JAN 2020 BUT BOTH REPORTS ARE DIFFERENT HOW THIS CAN BE POSSIBLE IN FIRST NO DJ STENT AND IN SECOND THERE IS DJ STENT SO CASE REJECTED,1
+"Surgery Not done, Pt referred to other Hospital before surgery Hence claim is not Payable",0
+"LAMA BEFORE THE PROCEDURE, HENCE DENIED ",1
+CLAIM REJECTED AS GAP OF 15 DAYS FOR BLOCKING SURGICAL PACKAGES HAS NOT COMPLETED AS ALREADY DJ STENTING DONE ON 10/1,1
+"As per the past history on same date severe anemia package taken CASE/PS1/HOSP3P10731/PS304353, so BT also covered in that package, hence rejected",1
+PREAUTH REJECTED HENCE CASE REJECTED ,1
+REJECTED AS IMPLANT REMOVAL CHARGES ARE COVERED IN SURGERY PACKAGE ,0
+REJECTED AS SURGERY NOT DONE AND MENTIONED IN CASE SUMMARY PATIENT MANAGED CONSERVATIVELY AND REFERRED TO HIGHER CENTER,1
+REJECTED AS PATIENT WAS NOT UNDER MEDICAL ADMISSION..THIS PACKAGE CAN BE CLUBBED ONLY WITH MEDICAL PKG,0
+REJECTED AS CLAIM SUBMITTED AFTER  15 DAYS OF DEATH,1
+Procedure not performed,1
+"BT NOTE AND BILL FOR BT NOT FOUND , REJECTED",1
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE(DOD 17/3/2020 ON D/S),1
+"Rejected as the disease is alcohol induced which is clearly given in Summary by treating doctor, and any disease which is caused by alcohol is not covered by this scheme, by NHA guideline",0
+REJECTED AS ON REPEATED QUERIES REQUESTED DOCUMENT(DIALYSIS CHART FOR CURRENT DOA)  WAS NOT PROVIDED,1
+"Claims is submitted After 15days of discharge of the patient,hence rejected",1
+"Already package taken CASE/PS1/HOSP37G26966/PS296801,need for this package is not justified,hence rejected",1
+REJECTED TREATMENT FOR AS ALCOHOL INDUCED AILMENTS IS NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+"Already package taken CASE/PS1/HOSP37G26966/PS299568,need for this package on same day is not justified,hence rejected",1
+"PreAuth is initiated after 5days of admission of patient and also after discharge of patient,hence rejected",1
+"PreAuth is raised after 5days of admission of patient and also raised after discharge,Hence rejected",1
+REJECTED AS SURGICAL PROCEDURE DONE..APPROVAL CANNOT BE PROVIDED UNDER MEDICAL PACKAGE,0
+ORAL CHEMOTHERAPY IS NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED ,0
+"AS PATIENT IS CHRONIC ALCOHOLIC.CAN NOT BE PAYBLE AS PER THE ABPMJAY TARIFF,HENCE REJECTED ",0
+REJECTED AS PROCEDURE NOT DONE,1
+REJECTED AS ONLY ORAL MEDICATION GIVEN AS PER D/S,0
+"Claim submitted by hospital is more than 30 days of discharge of patient,hence rejected",1
+REJECT AS CLAIM HAS BEEN SUBMITTED AFTER 30 DAYS,1
+CASE REJECTED AS PATIENT DIED BEFORE SURGERY ,1
+WRONG PACKAGE BLOCKED AS DIALYSIS PACKAGE SAPERATELY CAN ONLY BE BLOCKED UNDER SURGERY HENCE REJECTED,0
+ORAL CHEMOTHERAPY IS NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED,0
+"rejected,Claim is submitted after 30 days of Discharge of the patient, hence rejected",1
+REJECTED AS DIALYSIS NOT DONE,1
+REJECTED AS WRONG PACKAGE BLOCKED FOR CONSERVATIVE MNGT,0
+"Claim submitted by hospital is more than 15 days of discharge of patient,Hence rejected",1
+ALCOHOLIC AND ITS RELATED DISEASES ARE NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED ,0
+REJECTED AS PROCEDURE NOT DONE MENTIONED FROM HOSPITAL END,1
+Delayed submission claims 30 days after the discharge of the patient. HENCE DENIED,1
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE(DOD 17/3/2020 AS PER DOCUMENT PROVIDED),1
+REJECTED AS ADMISSION FOR SURGICAL MNGT..APPROVAL CANNOT BE GIVEN UNDER MEDICAL PKG,0
+REJECTED AS PATIENT DELIVERY DONE IN SOME OTHER HOSPITAL,1
+"DOA 21/3/20 AND DOD 27/3/20 , CECT ABD ON 29/3/20 , CT MRI ONLY CAN BE CLUBBED WITH MEDICAL PACKAGE, HENCE CLAIM IS BEING REJECTED AS CECT WAS DONE AFTER DISCHARGE FROM MEDICAL PACKAGE.",1
+Rejected as the creatinine is not Valid ( 19/2). it should be within the month,1
+CLAIM REJECTED AS HOSPITAL PROVIDING SAME PHOTO IN EVERY CASE,1
+REJECTED AS ORAL MEDICATION MASKED UP AND OP TO IP CONVERSION CASE,1
+"REJECTED,AS THIS PACKAGE CANNOT BE BLOCKED ALONE AS IT HAS TO BE CLUBBED WITH MEDICAL PACKAGE",0
+Rejected by SHA,1
+SUBSTANCE ABUSE AND ITS RELATED COMPLICATION ARE NOT PAYABLE AS PER THE POLICY TERMS AND CONDITIONS HENCE REJECTED,0
+CLAIM REJECTED AS HOSPITAL PROVIDING SAME PHOTO IN EVERY HD CASE,1
+"REJECTED,AS CT HEAD CHARGES ARE NOT COVERED UNDER THIS PACKAGE ",0
+"Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient,hence rejected ",1
+rejected as after 5 days tat,1
+PRE AUTH INITIATED AFTER 5 DAYS OF ADMISSION AFTER PATIENT DISCHARGE HENCE REJECTED,1
+"As per the info given, the PRBC transfusion is not done and hence the claim is rejected.",1
+Rejected as the preauth is initiated after 5 days of admission and after discharging the  patient,1
+"PreAuth is initiated after 5days of admission of the patient and also after discharge,hence rejected",1
+REJECTED AS APPROVAL TAKEN ON 31 BUT DIALYSIS DONE ON 30 ,1
+DATE MISMATCH IN D/S,0
+"AS PER THE JUSTIFICATION PROVIDED , NO BLOOD TRANSFUSION IS DONE AND HENCE THE PACKAGE BLOCKED IS NOT JUSTIFIED . HENCE REJECTED DUE TO MISMATCH PACKAGE.",0
+C CLAIM REJECTED AS HOSPITAL PROVIDING SAME PHOTO IN EVERY HD CASE,1
+CLAIM REJECTED AS HOSPITAL HAS OPTED FOR PLANNED PROCEDURE AND PROCEDURE DONE BEFORE APPROVAL ,0
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE(DOD ON D/S 29/3/2020),0
+REJECTED AS MEDICAL AND SURGICAL PACKAGES ARE CANNOT BE CLUBBED,1
+kindly provide treatment chart till Discharge date and vital chart,1
+"Pt Admitted on 29th March 2020 at 2 10 pm and referred to Other Hospital at 2 20 pm on same day, ie admitted only for 10 minutes, Hence claim is not Payable",1
+"Already a surgical package taken on 1/4/2020 CASE/PS1/HOSP3P63305/PS338498,need for medical package is not justified,hence rejected",0
+FINAL BILL 2400 IS MORE THAN PREAUTH AMOUNT 2000 HENCE CLAIM BEING REJECTED,0
+KINDLY PROVIDE CLINICAL NOTES OT NOTES AND JUSTIFICATION FOR THE PACKAGE,0
+"DOA and DOD is on same day,need for this package is not justified,Hence rejected",1
+CLAIM REJECTED  AS POST OP MEDICAL MANAGEMENT COVERED UP TO 7 DAYS POST SURGERY,0
+"Multiple query raised for post op KUB x ray film with DJ stent, but not reverted, hence rejected",1
+case rejected as preauth initiated post discharge as day care procedure,1
+REJECTED AS PREAUTH WAS INITIATED AFTER DISCHARGE DOD 30/3/2020,1
+"AS PER THE JUSTIFICATION PROVIDED BY THE HOSPITAL , NO SURGERY IS DONE FOR THIS PATIENT . HENCE REJECTED",1
+"After repeated query raised for clinical photo during dialysis for  28/3/2020,old clinical photo provided,hence rejected Photo uploaded has an old date , kindly upload the patient photo during dialysis on 28/3",1
+"Case rejected as patient on mainly oral medications and vitals and reports donot justify admission , could have been managed at OPD basis ",1
+"PRE AUTH IS INITIATED AFTER 5 DAYS OF ADMISSION AND ALSO AFTER DISCHARGE ,HENCE REJECTED ",1
+Echo is payable when done under GA and hence the claim is rejected.,0
+REJECTED DUE TO PRE AUTH INITIATED AFTER THE PATIENT DISCHARGE,1
+"DATE MISMATCH D/S AND FINAL BILL , REJECTED",1
+REJECTED AS PREAUTH IS INITIATED AFTER THE DISCHARGE,1
+Rejected as the Preauth is initiated after 5 days of admission and after discharging the patient,1
+FRAUDULENT CLAIM,1
+"PreAuth is initiated after 5days of admission of the patient,hence rejected",1
+REJECTED AS DAY CARE PROCESS PREAUTH HAS TO BE INITIATED ON SAME DAY OF PROCEDURE,1
+"REJECTED,EXEMPTION FROM POLICY AS PER NHA GUIDELINE",0
+"In past history already severe anemia package taken CASE/PS1/HOSP3P27593/PS331348, so BT also included in that package hence rejected",0
+REJECTED AS NO CT/MRI DONE,1
+patient pic does not match,1
+REJECTED AS NO PROPER DOCUMENT IS UPLOADED EVEN AFTER THE MANY QUERIES,1
+REJECTED AS NO TRANSFUSION DONE,1
+REJECTED AS Intentional self-injury/suicide not payable by insurance,0
+QUERY IS ASKED FOR HD CHART OF 28/3/2020 AND WHICH IS NOT PROVIDED EVEN AFTER ASKING FOR MULTIPLE TIMES . HENCE REJECTED.,1
+AS POST OP X RAY IS A MANDATORY DOCUMENT AND IT IS NOT PROVIDE AFTER ASKING FOR MULTIPLE TIMES. HENCE REJECTED.,1
+CLAIM REJECTED AS SURGICAL AND MEDICAL PACKAGE CAN NOT BE CLUBBED TOHETHER,0
+REJECTED AS SELF INFLICTED INJURIES AND POISONING IS NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+REJECTED AS MISMATCHED DATES ON DISCHARGE SUMMARY WITH DIALYSIS CHART,1
+QUERY IS ASKED FOR THE DIALYSIS CHART OF 23/3/2020 AND IT IS NOT PROVIDED EVEN AFTER ASKING FOR MULTIPLE TIMES. HENCE REJECTED.,1
+"IN past history already surgical package taken CASE/PS1/HOSP3P16183/PS323344, hip replacement, so as per the tender post op medical package also covered in surgical package, hence rejected",0
+REJECTED AS NO DURING DIALYSIS PHOTO IS PROVIDED,1
+KINDLY REVERT WITH DAYWISE VITAL AND TREATMENT CHARTS,0
+REJECTED AS FOR PLANNED PROCEDURE PATIENT WAS DISCHARGED BEFORE PREAUTH APPROVAL,1
+"REJECTED, AS CT CHARGES ARE NOT COVERED UNDER THIS PACKAGE ",0
+AS QUERY IS ASKED FOR POST OP X RAY FILM WHICH IS A MANDATORY DOCUMENT AND IT IS NOT PROVIDED EVEN AFTER ASKING FOR MULTIPLE TIMES AND AS THE HOSPITAL ONLY GIVEN PRE OP X RAY FILM.HENCE REJECTED.,1
+REJECTED AS DURING DIALYSIS PROCEDURE IS PROVIDED,1
+HOSPITAL HAS OPTED FOR PLANNED PROCEDURE AND PROCEDURE DONE BEFORE APPROVAL HENCE REJECTED,1
+"Already a surgical package taken CASE/PS1/HOSP3P49877/PS323157,post operative hospitalization included in package,hence rejected",0
+REJECTED AS CONSERVATIVE MNGT OF POST OP COMPLICATION TILL 15 DAYS IS COVERED UNDER SURGERY PACKAGE,0
+REJECTED CKD PATIENT CANT BLOCK THIS PACKAGE,0
+"Query raised for BT notes and cross matching slip but not provided, hence rejected",1
+CLAIM REJECTED AS SAME PHOTO PROVIDED ON 06/04 CLAIM,1
+"QUERY IS ASKED FOR  HD CHART OF 27/3/2020 AND IT WAS NOT PROVIDED EVEN AFTER ASKING FOR MANY TIMES , HENCE REJECTED.",1
+REJECTED AS HOSPITAL PROVIDING SAME PHOTO IN EVERY CASE,1
+REJECTED AS NO SURGERY DONE,0
+CASE REJECTED AS CT WAS NOT DONE,1
+"AFTER 3 QUERY HOSPITAL NOT PROVIDE FINAL BILL,  HENCE CLAIM IS BEING REJECTED",1
+"REJECTED AS Pre-Auth is initiated after 5 days of Admission and also after Discharge of the Patient,",1
+REJECTED AS PREAUTH RAISED AFTER DISCHARGE,1
+REJECTED AS ALTERNATE DAY TREATMENT WAS GIVEN AS PER DOCUMENTS PROVIDED,0
+Note number of hospitalisation opted is less than proposed no of days .rejected,1
+Preauth initiated after 5 days of admisison and after discharge hence rejected,1
+"REJECTED, AS PATIENT IS NOT IN THE HOSPITAL , HENCE REJECTED ",1
+ALREADY QUERY IS ASKED FOR HD CHART AND QUERY IS RAISED FOR MULTIPLE TIMES AND QUERY DOCUMENT IS NOT PROVIDED. HENCE REJECTED.,1
+REJECTED AS PLANNED PROCEDURE WAS DONE BEFORE PREAUTH APPROVAL(POST OP X RAY WAS DATED 20/3),1
+FINAL BILL 25740 IS MORE THAN PREAUTH AMOUNT 19800 HENCE CLAIM BEING REJECTED,0
+MEDICAL MANAGEMENT CANNOT BE GIVEN UNDER U 100 HENCE REJECTED,0
+"Already surgical package taken CASE/PS1/HOSP3P23204/PS332640, so medical package not justified, hence rejected ",1
+claim rejected as hospital has provided same photo of patient in every dialysis case ,1
+REJECTED AS PATIENT READMITTED FOR SURGERY ON 31/3 AND PREOPERATIVE 5 DAYS BEFORE IS PART OF PACKAGE,0
+"BT NOTES AND FINAL BILL FOR BT NOT ATTACHED, HENCE CLAIM IS BEING REJECTED",0
+"BLOOD TRANSFUSION HAS TO BE COVERED UNDER SURGICAL PACKAGE ITSELF, HENCE DENIED ",0
+Rejected as the submission is beyond the period of 15 days.,1
+REJECTED AS PRE AUTH INITIATED AFTER 5 DAYS OF ADMISSION ,1
+"AS PER D/S PATIENT MANAGED CONSERVATIVELY , AND PROCEDURE NOT MENTIONED IN D/S. HENCE CLAIM IS BEING REJECTED ",1
+AS ONE MORE PREAUTH INITIATED BLOCKING SAME FOR DOA ,1
+The claim is rejected due to the following reasons 1) Previous claim for the same DOA is rejected due to fraud 2) Back dated pre auth initiation is not allowed.,1
+REJECTED AS PREAUTH INITIATED AFTER 15 DAYS,1
+"ALD WAS DIAGNOSIS IN SUMMARY ,NOT MENTIONED IN PRE AUTH,ALCOHOL IS EXCLUSION,NOT PAYABLE HENCE REJECTED  ",1
+REJECTED AS SAME PHOTO UPLOADED IN PREVIOUS CASE ALSO,1
+FINAL BILL 17820 IS MORE THAN PREAUTH AMOUNT 11880 HENCE CLAIM BEING REJECTED,0
+PRE AUTH INITIATED AFTER 5 DAYS OF ADMISSION AND AFTER DISCHARGE HENCE THIS CLAIM IS REJECTED,1
+"HD CHART OF SAME DATE OF ENHANCEMENT NOT PROVIDED,HENCE REJECTED ",0
+"DOA 29/3/20 DOD 3/4/20 , LOS 5 DAYS AND NO NEW STEP DOWN PACKAGE TAKEN AFTER DISCHARGE FROM THIS PACKAGE , MINIMUM 14 DAYS STAY IS REQUIRED UNDER THIS PACKAGE AS PER PACKAGE CRITERIA, HENCE CLAIM IS BEING REJECTED",0
+REJECTED AS ON ORAL MEDICATION AL VITALS NORMAL THEN NO NEED OF IPD CAN BE MANAGED IN OPD ,0
+REJECTED AS ALCOHOL RELATED AILMENTS ARE NOT PAYABLE AS PER POLICY EXCLUSIONS,0
+"As per TMS Claim is submitted after 15 days of discharge of the Patient, therefore claim have been rejected",1
+"AS PER AUDIT REPORT,NO SPECIALIST AVAILABLE IN THIS HOSPITAL ,HENCE REJECTED  ",0
