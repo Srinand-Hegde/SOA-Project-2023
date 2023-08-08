@@ -7,7 +7,7 @@ output:
     toc_float: TRUE
     collapsed: yes
     smooth_scroll: yes
-  html_notebook: null
+  html_notebook: null       
 ---
 
 ```{=html}
@@ -82,7 +82,6 @@ data <- readRDS("data_for_input_25mar.rds")
 
 
 # Choosing top 10 procedure code based on severity and frequency, total 16 due to intersection
-#sairam
 clean_data1 = data %>% 
   filter(
     primary_procedure_code %in% 
@@ -753,7 +752,7 @@ c <- confusionMatrix(as.factor(tree.pred), adasyn_wo_triggers_test$fraud, mode =
 c <- rbind(c, c("DT adasyn_wo_triggers_train", c$overall[1], c$byClass[c(1,2,5,6,7)], roc_obj$auc, pr.curve(tree.pred, adasyn_wo_triggers_test$fraud)$auc.integral))
 c = c[-1,]
 rpart.plot(tree, extra = 101)
-
+c
 ```
 
 ```{r}
@@ -946,24 +945,78 @@ importance(classifier_rf_wt)
   
 # Variable importance plot
 varImpPlot(classifier_rf_wt,top= 10)
+
+
+
+# Training subset of the above training data for ice implementation
+#Sampling
+sample.size = round(0.1*nrow(adasyn_w_triggers_train))
+adasyn_w_triggers_train_sub <- adasyn_w_triggers_train %>% sample_n(size = sample.size)
+adasyn_w_triggers_test_sub <- adasyn_w_triggers_test %>% sample_n(size = sample.size)
+
+# train the random forest model
+classifier_rf_wt_sub <- randomForest(fraud ~ ., data = adasyn_w_triggers_train_sub, ntree = 100)
+
+# predict probabilities on the test set
+y_prob <- predict(classifier_rf_wt_sub, newdata = adasyn_w_triggers_test_sub, type = "prob")[,2]
+
+# calculate ROC AUC and PR AUC
+roc_obj <- roc(adasyn_w_triggers_test_sub$fraud, y_prob)
+pr_obj <- pr.curve(scores.class0 = y_prob, weights.class0 = ifelse(adasyn_w_triggers_test_sub$fraud == "1", 1, 0))
+
+# determine threshold using ROC curve
+threshold <- coords(roc_obj, "best")[[1]]
+
+# classify test set based on threshold
+y_pred <- ifelse(y_prob > threshold, 1, 0)
+
+# Confusion Matrix
+c1 <- confusionMatrix(adasyn_w_triggers_test_sub$fraud, as.factor(y_pred), mode = "everything", positive = "1")
+c <- rbind(c, c("RF adasyn_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_obj$auc, pr_obj$auc.integral))
+
+rm(c1)
+
+  
+# Plotting model
+plot(classifier_rf_wt_sub)
+  
+# Importance plot
+importance(classifier_rf_wt_sub)
+  
+# Variable importance plot
+varImpPlot(classifier_rf_wt_sub,top= 10)
 ```
 
-### PDP for Random Forest
+### PDP for Random Forest(ADASYN)
 ```{r pdp using pdp library}
-partial(classifier_rf, pred.var = "approved_allowed_amount", plot = TRUE)
+#top 5 features are "no_of_days_stayed", "Claim_reported_delay_flag", "claim_duration_days", "approved_allowed_amount", "distance")
+pdp.rf.1 <- partial(classifier_rf_wt, pred.var = "no_of_days_stayed", plot = TRUE)
+#partial(classifier_rf_wt, pred.var = "claim_reported_delay_flag", plot = TRUE)
+#partial(classifier_rf_wt, pred.var = "claim_duration_days", plot = TRUE)
+#partial(classifier_rf_wt, pred.var = "approved_allowed_amount", plot = TRUE)
+#partial(classifier_rf_wt, pred.var = "distance", plot = TRUE)
+plot(pdp.rf.1)
 ```
-```{r pdp using iml library}
-# Creating the predictor object used to store the model
-predictor = Predictor$new(classifier_rf, data = adasyn_w_triggers_test %>% select(-!!sym("fraud")), y = adasyn_w_triggers_test %>% select(!!sym("fraud")) %>% pull())
+### ICE for Random Forest ADASYN
+```{r ice rf adasyn}
+ice.rf.1 <- partial(classifier_rf_wt_sub, pred.var = "no_of_days_stayed", plot = TRUE, ice = TRUE)
+plot(ice.rf.1)
+```
 
-# Calculating the effect of a feature on the response
-featureEffect = FeatureEffect$new(predictor, feature = "no_of_days_stayed", method = "pdp")
-featureEffect.data <- featureEffect$results
+### SHAP feature importance Random Forest
+```{r shap feature importance}
+# Preprocessing for shap implementation
+selected_columns <- c("no_of_days_stayed","claim_reported_delay_flag","claim_duration_days","distance","approved_allowed_amount","fraud")
+adasyn_w_triggers_train_shap <- adasyn_w_triggers_train[selected_columns]
+adasyn_w_triggers_test_shap <- adasyn_w_triggers_test[selected_columns]
+classifier_rf_wt_shap <- randomForest(fraud ~ ., data = adasyn_w_triggers_train_shap, ntree = 100)
 
-ggplot(featureEffect.data, aes(no_of_days_stayed)) +
-  geom_line(aes(y = .value), color = "blue") +
-  geom_line(aes(y = threshold), color = "red")
-  labs(title = "PDP for no_of_days_stayed", x = "no_of_days_stayed", y = "Degree of partial dependence")
+predictor.rf <- Predictor$new(model = classifier_rf_wt_shap, data = adasyn_w_triggers_train_shap %>% select(-!!sym("fraud")), y = adasyn_w_triggers_train_shap %>% select(!!sym("fraud"))%>%pull())
+
+shapley.rf <- list()
+for (i in 1:nrow(adasyn_w_triggers_train_shap)) {
+  shapley.rf[[i]] <- Shapley$new(predictor = predictor.rf, x.interest = adasyn_w_triggers_train_shap[i, -6], sample.size = 50)
+}
 ```
 
 
@@ -1004,10 +1057,10 @@ varImpPlot(classifier_rf,top= 10)
 
 ```{r}
 # train the random forest model
-classifier_rf <- randomForest(fraud ~ ., data = smote_w_triggers_train, ntree = 100)
+classifier_rf_wt_sm <- randomForest(fraud ~ ., data = smote_w_triggers_train, ntree = 100)
 
 # predict probabilities on the test set
-y_prob <- predict(classifier_rf, newdata = smote_w_triggers_test, type = "prob")[,2]
+y_prob <- predict(classifier_rf_wt_sm, newdata = smote_w_triggers_test, type = "prob")[,2]
 
 # calculate ROC AUC and PR AUC
 roc_obj <- roc(smote_w_triggers_test$fraud, y_prob)
@@ -1032,6 +1085,64 @@ importance(classifier_rf)
   
 # Variable importance plot
 varImpPlot(classifier_rf,top= 10)
+
+
+# Training subset of the above training data for ice implementation
+#Sampling
+sample.size = round(0.1*nrow(smote_w_triggers_train))
+smote_w_triggers_train_sub <- smote_w_triggers_train %>% sample_n(size = sample.size)
+smote_w_triggers_test_sub <- smote_w_triggers_test %>% sample_n(size = sample.size)
+
+# train the random forest model
+classifier_rf_wt_sm_sub <- randomForest(fraud ~ ., data = smote_w_triggers_train_sub, ntree = 100)
+
+# predict probabilities on the test set
+y_prob <- predict(classifier_rf_wt_sm_sub, newdata = smote_w_triggers_test_sub, type = "prob")[,2]
+
+# calculate ROC AUC and PR AUC
+roc_obj <- roc(smote_w_triggers_test_sub$fraud, y_prob)
+pr_obj <- pr.curve(scores.class0 = y_prob, weights.class0 = ifelse(smote_w_triggers_test_sub$fraud == "1", 1, 0))
+
+# determine threshold using ROC curve
+threshold <- coords(roc_obj, "best")[[1]]
+
+# classify test set based on threshold
+y_pred <- ifelse(y_prob > threshold, 1, 0)
+
+# Confusion Matrix
+c1 <- confusionMatrix(smote_w_triggers_test_sub$fraud, as.factor(y_pred), mode = "everything", positive = "1")
+c <- rbind(c, c("RF smote_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_obj$auc, pr_obj$auc.integral))
+
+rm(c1)
+# Plotting model
+plot(classifier_rf_wt_sm_sub)
+  
+# Importance plot
+importance(classifier_rf_wt_sm_sub)
+  
+# Variable importance plot
+varImpPlot(classifier_rf_wt_sm_sub,top= 10)
+
+```
+### PDP for Random Forest(SMOTE)
+
+```{r pdp random forest smote}
+pdp.rf.2 <- partial(classifier_rf_wt_sm, pred.var = "approved_allowed_amount", plot = TRUE)
+plot(pdp.rf.2)
+```
+
+### ICE for Random Forest SMOTE
+```{r ice rf smote}
+#Creating the predictor object used to store the model
+predictor = Predictor$new(classifier_rf_wt_sm_sub, data = adasyn_w_triggers_test %>% select(-!!sym("fraud")), y = adasyn_w_triggers_test %>% select(!!sym("fraud")) %>% pull())
+
+# Calculating the effect of a feature on the response
+rf.ice.2 <- FeatureEffect$new(predictor, feature = "approved_allowed_amount", method = "pdp+ice")
+rf.ice.2$plot()
+
+#ggplot(featureEffect.data, aes(claim_reported_delay_flag)) +
+#  geom_line(aes(y = .value), color = "blue") +
+#  labs(title = "PDP for claim_reported_delay_flag", x = "claim_reported_delay_flag", y = "Degree of partial dependence"
 ```
 
 ### MWMOTE
@@ -1070,10 +1181,10 @@ varImpPlot(classifier_rf,top= 10)
 
 ```{r}
 # train the random forest model
-classifier_rf <- randomForest(fraud ~ ., data = mwmote_w_triggers_train, ntree = 100)
+classifier_rf_wt_mw <- randomForest(fraud ~ ., data = mwmote_w_triggers_train, ntree = 100)
 
 # predict probabilities on the test set
-y_prob <- predict(classifier_rf, newdata = mwmote_w_triggers_test, type = "prob")[,2]
+y_prob <- predict(classifier_rf_wt_mw, newdata = mwmote_w_triggers_test, type = "prob")[,2]
 
 # calculate ROC AUC and PR AUC
 roc_obj <- roc(mwmote_w_triggers_test$fraud, y_prob)
@@ -1100,6 +1211,14 @@ importance(classifier_rf)
 # Variable importance plot
 varImpPlot(classifier_rf,top= 10)
 ```
+
+### PDP for random forest(MWMOTE)
+```{r pdp random forest mwmote}
+pdp.rf.3 <- partial(classifier_rf_wt_mw, pred.var = "approved_allowed_amount", plot = TRUE)
+plot(pdp.rf.3)
+```
+
+
 
 ### ROSE
 
@@ -1138,10 +1257,10 @@ varImpPlot(classifier_rf,top= 10)
 
 ```{r}
 # train the random forest model
-classifier_rf <- randomForest(fraud ~ ., data = rose_w_triggers_train, ntree = 100)
+classifier_rf_wt_rs <- randomForest(fraud ~ ., data = rose_w_triggers_train, ntree = 100)
 
 # predict probabilities on the test set
-y_prob <- predict(classifier_rf, newdata = rose_w_triggers_test, type = "prob")[,2]
+y_prob <- predict(classifier_rf_wt_rs, newdata = rose_w_triggers_test, type = "prob")[,2]
 
 # calculate ROC AUC and PR AUC
 roc_obj <- roc(rose_w_triggers_test$fraud, y_prob)
@@ -1168,6 +1287,13 @@ importance(classifier_rf)
 # Variable importance plot
 varImpPlot(classifier_rf,top= 10)
 ```
+
+### PDP for random forest(ROSE)
+```{r}
+pdp.rf.4 <- partial(classifier_rf_wt_rs, pred.var = "approved_allowed_amount", plot = TRUE)
+plot(pdp.rf.4)
+```
+
 
 ## XG Boost
 
@@ -1214,10 +1340,10 @@ dtrain <- xgb.DMatrix(data = data.matrix(adasyn_w_triggers_train %>% dplyr::sele
 dtest <- xgb.DMatrix(data = data.matrix(adasyn_w_triggers_test%>% dplyr::select(-c(fraud))), label= adasyn_w_triggers_test$fraud)
 
 # Train the model
-model <- xgb.train(data = dtrain, nrounds = 15)
+xgb.wt.adsyn <- xgb.train(data = dtrain, nrounds = 15)
 
 # Use the model to make predictions on test data
-pred_y <- predict(model, dtest)
+pred_y <- predict(xgb.wt.adsyn, dtest)
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(adasyn_w_triggers_test$fraud, pred_y)
@@ -1235,25 +1361,22 @@ tree.pred <- ifelse(pred_y > threshold, 1, 0)
 c1 <- confusionMatrix(adasyn_w_triggers_test$fraud, as.factor(tree.pred), mode = "everything", positive = "1")
 c <- rbind(c, c("XGB adasyn_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_auc, pr_auc))
 
-rm(c1)
 
-xgb.plot.importance(xgb.importance(names(adasyn_w_triggers_train %>% dplyr::select(-c("fraud"))),model = model))
+xgb.plot.importance(xgb.importance(names(adasyn_w_triggers_train %>% dplyr::select(-c("fraud"))),model = xgb.wt.adsyn))
 
 ```
 
-### SHAP Feature Importance
+### SHAP Feature Importance xgb adasyn
 ```{r}
-shap_result = shap.values(xgb_model = model,
+shap_result = shap.values(xgb_model = xgb.wt.adsyn,
                           X_train = dtrain)
-# create SHAP interaction values
-# shap_int <- shap.prep.interaction(xgb_mod = model, X_train = dtrain)
 
 shap.data <- as.data.frame(shap_result$mean_shap_score) %>% 
   rownames_to_column("var") %>% 
   select(var, importance = `shap_result$mean_shap_score`)
 
 ggplot(shap.data, aes(x=reorder(var, importance), y=importance)) +
-  geom_bar(stat = "identity", fill = Bright.Blue) +
+  geom_bar(stat = "identity", fill = "blue") +
   labs(x = "",
        y = "Importance") +
   theme_minimal() +
@@ -1274,36 +1397,12 @@ feature_importance
 
 
 
-### Permutation feature importance
-```{r}
-binary_cross_entropy <- function(y, py, epsilon = 1e-15){
-  n = length(y)
-  J = vector("numeric", length = n)
-  py <- pmax(pmin(py, 1 - epsilon), epsilon)
-  J <- -y * log(py) - (1 - y) * log(1 - py)
-  return(mean(J))
-}
-
-y <- as.numeric(as.character(adasyn_w_triggers_train$fraud))
-binary_cross_entropy(y, tree.pred)
-
-```
-
-### Preprocessing for IML methods
-```{r}
-required_features <- c("no_of_days_stayed", "claim_reported_delay_flag", "claim_count_flag", "distance", "claim_duration_days", "fraud")
-iml_data_train <- adasyn_w_triggers_train %>% dplyr::select(required_features)
-iml_data_test <- adasyn_w_triggers_test %>% dplyr::select(required_features)
-
-predicted.xgb.avg <- mean(pred_y)
-print(predicted.xgb.avg)
-```
 
 
-### Partial Dependence Plots
-```{r pdp implementation xgboost - no_of_days_stayed}
+### PDP for XGBoost adasyn
+```{r pdp xgb adasyn}
 # Creating the predictor object used to store the model
-predictor = Predictor$new(model, data = adasyn_w_triggers_test %>% select(-!!sym("fraud")), y = adasyn_w_triggers_test %>% select(!!sym("fraud")) %>% pull(),
+predictor = Predictor$new(xgb.wt.adsyn, data = adasyn_w_triggers_test %>% select(-!!sym("fraud")), y = adasyn_w_triggers_test %>% select(!!sym("fraud")) %>% pull(),
                             predict.fun=function(model, newdata){
                               results <- predict(model, as.matrix(newdata))
                               return(results)
@@ -1311,13 +1410,12 @@ predictor = Predictor$new(model, data = adasyn_w_triggers_test %>% select(-!!sym
 )
 
 # Calculating the effect of a feature on the response
-featureEffect = FeatureEffect$new(predictor, feature = "no_of_days_stayed", method = "pdp")
+featureEffect = FeatureEffect$new(predictor, feature = "claim_reported_delay_flag", method = "pdp")
 featureEffect.data <- featureEffect$results
 
-ggplot(featureEffect.data, aes(no_of_days_stayed)) +
+ggplot(featureEffect.data, aes(claim_reported_delay_flag)) +
   geom_line(aes(y = .value), color = "blue") +
-  geom_line(aes(y = threshold), color = "red")
-  labs(title = "PDP for no_of_days_stayed", x = "no_of_days_stayed", y = "Degree of partial dependence")
+  labs(title = "PDP for claim_reported_delay_flag", x = "claim_reported_delay_flag", y = "Degree of partial dependence")
 
 
 ```
@@ -1422,7 +1520,7 @@ plot_pdp_dist <- function(df, pdpVar, save, plotType) {
 ```{r ice implementation - 1}
 #pdp.data.distance <- pdp_plot_data(model, adasyn_w_triggers_test, "distance", "fraud", "pdp")
 #pdp.data.nostayed <- pdp_plot_data(model, adasyn_w_triggers_test, "no_of_days_stayed", "fraud", "pdp")
-pdp.data.claimcount <- pdp_plot_data(model, adasyn_w_triggers_test, "claim_count_flag", "fraud", "ice")
+pdp.data.claimcount <- pdp_plot_data(xgb.wt.adsyn, adasyn_w_triggers_test, "claim_count_flag", "fraud", "ice")
 ```
 
 ```{r pdp implementation - junk1}
@@ -1437,17 +1535,6 @@ pdp.data.claimcount %>%
   labs(x = "no_of_days_stayed", 
        y = "Predicted fraud") +
   theme_minimal()
-```
-
-
-```{r pdp rough workspace}
-Predictor$new(model, data = iml_data_test %>% select(all_of(required_features)) %>% select(-!!sym("fraud")), y = iml_data_test %>% select(all_of(required_features)) %>% select(!!sym("fraud")) %>% pull(),
-                            predict.fun=function(model, newdata){
-                              newData_x = xgb.DMatrix(data.matrix(newdata), missing = NA)
-                              results<-predict(model, newData_x)
-                              return(results)
-                            }
-  )
 ```
 
 
@@ -1493,10 +1580,10 @@ dtrain <- xgb.DMatrix(data = data.matrix(smote_w_triggers_train %>% dplyr::selec
 dtest <- xgb.DMatrix(data = data.matrix(smote_w_triggers_test%>% dplyr::select(-c(fraud))), label= smote_w_triggers_test$fraud)
 
 # Train the model
-model <- xgb.train(data = dtrain, nrounds = 15)
+xgb.wt.sm <- xgb.train(data = dtrain, nrounds = 15)
 
 # Use the model to make predictions on test data
-pred_y <- predict(model, dtest)
+pred_y <- predict(xgb.wt.sm, dtest)
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(smote_w_triggers_test$fraud, pred_y)
@@ -1511,13 +1598,56 @@ threshold <- coords(roc_obj, "best")[[1]]
 tree.pred <- ifelse(pred_y > threshold, 1, 0)
 
 # Confusion Matrix
-c1 <- confusionMatrix(smote_w_triggers_test$fraud, as.factor(tree.pred), mode = "everything", positive = "1")
-c <- rbind(c, c("XGB smote_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_auc, pr_auc))
-rm(c1)
+# c1 <- confusionMatrix(smote_w_triggers_test$fraud, as.factor(tree.pred), mode = "everything", positive = "1")
+# c <- rbind(c, c("XGB smote_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_auc, pr_auc))
+# rm(c1)
 
-xgb.plot.importance(xgb.importance(names(smote_w_triggers_train %>% dplyr::select(-c("fraud"))),model = model))
+xgb.plot.importance(xgb.importance(names(smote_w_triggers_train %>% dplyr::select(-c("fraud"))),model = xgb.wt.sm))
 
 ```
+
+
+### SHAP Feature Importance xgb smote
+```{r}
+shap_result = shap.values(xgb_model = xgb.wt.sm,
+                          X_train = dtrain)
+
+shap.data <- as.data.frame(shap_result$mean_shap_score) %>% 
+  rownames_to_column("var") %>% 
+  select(var, importance = `shap_result$mean_shap_score`)
+
+ggplot(shap.data, aes(x=reorder(var, importance), y=importance)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  labs(x = "",
+       y = "Importance") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = rel(1.5)),
+        axis.title = element_text(size = rel(1.5))) +
+  coord_flip()
+```
+
+### PDP for XGBoost smote
+```{r pdp xgb smote}
+# Creating the predictor object used to store the model
+predictor = Predictor$new(xgb.wt.sm, data = adasyn_w_triggers_test %>% select(-!!sym("fraud")), y = adasyn_w_triggers_test %>% select(!!sym("fraud")) %>% pull(),
+                            predict.fun=function(model, newdata){
+                              results <- predict(model, as.matrix(newdata))
+                              return(results)
+                            }
+)
+
+# Calculating the effect of a feature on the response
+featureEffect = FeatureEffect$new(predictor, feature = "claim_duration_days", method = "pdp")
+featureEffect.data <- featureEffect$results
+
+ggplot(featureEffect.data, aes(claim_duration_days)) +
+  geom_line(aes(y = .value), color = "blue") +
+  labs(title = "PDP for claim_duration_days", x = "claim_duration_days", y = "Degree of partial dependence")
+
+
+```
+
+
 
 ### MWMOTE
 
@@ -1559,10 +1689,10 @@ dtrain <- xgb.DMatrix(data = data.matrix(mwmote_w_triggers_train %>% dplyr::sele
 dtest <- xgb.DMatrix(data = data.matrix(mwmote_w_triggers_test%>% dplyr::select(-c(fraud))), label= mwmote_w_triggers_test$fraud)
 
 # Train the model
-model <- xgb.train(data = dtrain, nrounds = 15)
+xgb.wt.mw <- xgb.train(data = dtrain, nrounds = 15)
 
 # Use the model to make predictions on test data
-pred_y <- predict(model, dtest)
+pred_y <- predict(xgb.wt.mw, dtest)
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(mwmote_w_triggers_test$fraud, pred_y)
@@ -1581,8 +1711,49 @@ c1 <- confusionMatrix(mwmote_w_triggers_test$fraud, as.factor(tree.pred), mode =
 c <- rbind(c, c("XGB mwmote_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_auc, pr_auc))
 rm(c1)
 
-xgb.plot.importance(xgb.importance(names(mwmote_w_triggers_train %>% dplyr::select(-c("fraud"))),model = model))
+xgb.plot.importance(xgb.importance(names(mwmote_w_triggers_train %>% dplyr::select(-c("fraud"))),model = xgb.wt.mw))
 
+```
+
+
+### PDP for XGBoost mwmote
+```{r pdp xgb mwmote}
+# Creating the predictor object used to store the model
+predictor = Predictor$new(xgb.wt.mw, data = adasyn_w_triggers_test %>% select(-!!sym("fraud")), y = adasyn_w_triggers_test %>% select(!!sym("fraud")) %>% pull(),
+                            predict.fun=function(model, newdata){
+                              results <- predict(model, as.matrix(newdata))
+                              return(results)
+                            }
+)
+
+# Calculating the effect of a feature on the response
+featureEffect = FeatureEffect$new(predictor, feature = "no_of_days_stayed", method = "pdp")
+featureEffect.data <- featureEffect$results
+
+ggplot(featureEffect.data, aes(no_of_days_stayed)) +
+  geom_line(aes(y = .value), color = "blue") +
+  labs(title = "PDP for no_of_days_stayed", x = "no_of_days_stayed", y = "Degree of partial dependence")
+
+
+```
+
+### SHAP Feature Importance xgb mwmote
+```{r}
+shap_result = shap.values(xgb_model = xgb.wt.mw,
+                          X_train = dtrain)
+
+shap.data <- as.data.frame(shap_result$mean_shap_score) %>% 
+  rownames_to_column("var") %>% 
+  select(var, importance = `shap_result$mean_shap_score`)
+
+ggplot(shap.data, aes(x=reorder(var, importance), y=importance)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  labs(x = "",
+       y = "Importance") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = rel(1.5)),
+        axis.title = element_text(size = rel(1.5))) +
+  coord_flip()
 ```
 
 ### ROSE
@@ -1593,10 +1764,10 @@ dtrain <- xgb.DMatrix(data = data.matrix(rose_wo_triggers_train %>% dplyr::selec
 dtest <- xgb.DMatrix(data = data.matrix(rose_wo_triggers_test%>% dplyr::select(-c(fraud))), label= rose_wo_triggers_test$fraud)
 
 # Train the model
-model <- xgb.train(data = dtrain, nrounds = 15)
+xgb.rose <- xgb.train(data = dtrain, nrounds = 15)
 
 # Use the model to make predictions on test data
-pred_y <- predict(model, dtest)
+pred_y <- predict(xgb.rose, dtest)
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(rose_wo_triggers_test$fraud, pred_y)
@@ -1615,7 +1786,7 @@ c1 <- confusionMatrix(rose_wo_triggers_test$fraud, as.factor(tree.pred), mode = 
 c <- rbind(c, c("XGB rose_wo_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_auc, pr_auc))
 rm(c1)
 
-xgb.plot.importance(xgb.importance(names(rose_wo_triggers_train %>% dplyr::select(-c("fraud"))),model = model))
+xgb.plot.importance(xgb.importance(names(rose_wo_triggers_train %>% dplyr::select(-c("fraud"))),model = xgb.rose))
 
 
 ```
@@ -1626,10 +1797,10 @@ dtrain <- xgb.DMatrix(data = data.matrix(rose_w_triggers_train %>% dplyr::select
 dtest <- xgb.DMatrix(data = data.matrix(rose_w_triggers_test%>% dplyr::select(-c(fraud))), label= rose_w_triggers_test$fraud)
 
 # Train the model
-model <- xgb.train(data = dtrain, nrounds = 15)
+xgb.wt.rose <- xgb.train(data = dtrain, nrounds = 15)
 
 # Use the model to make predictions on test data
-pred_y <- predict(model, dtest)
+pred_y <- predict(xgb.wt.rose, dtest)
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(rose_w_triggers_test$fraud, pred_y)
@@ -1648,8 +1819,51 @@ c1 <- confusionMatrix(rose_w_triggers_test$fraud, as.factor(tree.pred), mode = "
 c <- rbind(c, c("XGB rose_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_auc, pr_auc))
 rm(c1)
 
-xgb.plot.importance(xgb.importance(names(rose_w_triggers_train %>% dplyr::select(-c("fraud"))),model = model))
+xgb.plot.importance(xgb.importance(names(rose_w_triggers_train %>% dplyr::select(-c("fraud"))),model = xgb.wt.rose))
 
+```
+
+
+
+### PDP for XGBoost rose
+```{r pdp xgb rose}
+# Creating the predictor object used to store the model
+predictor = Predictor$new(xgb.wt.rose, data = adasyn_w_triggers_test %>% select(-!!sym("fraud")), y = adasyn_w_triggers_test %>% select(!!sym("fraud")) %>% pull(),
+                            predict.fun=function(model, newdata){
+                              results <- predict(model, as.matrix(newdata))
+                              return(results)
+                            }
+)
+
+# Calculating the effect of a feature on the response
+featureEffect = FeatureEffect$new(predictor, feature = "claim_duration_days", method = "pdp")
+featureEffect.data <- featureEffect$results
+
+ggplot(featureEffect.data, aes(claim_duration_days)) +
+  geom_line(aes(y = .value), color = "blue") +
+  labs(title = "PDP for claim_duration_days", x = "claim_duration_days", y = "Degree of partial dependence")
+
+
+```
+
+
+### SHAP Feature Importance xgb ROSE
+```{r}
+shap_result = shap.values(xgb_model = xgb.wt.adsyn,
+                          X_train = dtrain)
+
+shap.data <- as.data.frame(shap_result$mean_shap_score) %>% 
+  rownames_to_column("var") %>% 
+  select(var, importance = `shap_result$mean_shap_score`)
+
+ggplot(shap.data, aes(x=reorder(var, importance), y=importance)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  labs(x = "",
+       y = "Importance") +
+  theme_minimal() +
+  theme(axis.text.y = element_text(size = rel(1.5)),
+        axis.title = element_text(size = rel(1.5))) +
+  coord_flip()
 ```
 
 ## GLM
@@ -1688,10 +1902,10 @@ rm(c1)
 ```{r}
 
 # Fit the GLM model
-fit <- glm(fraud ~ ., data = adasyn_w_triggers_train, family = binomial(link = "logit"))
+glm.wt.adsyn <- glm(fraud ~ ., data = adasyn_w_triggers_train, family = binomial(link = "logit"))
 
 # Testing Set
-test_prob <- predict(fit, newdata = adasyn_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
+test_prob <- predict(glm.wt.adsyn, newdata = adasyn_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(adasyn_w_triggers_test$fraud, test_prob)
@@ -1711,6 +1925,15 @@ c <- rbind(c, c("GLM adasyn_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5
 rm(c1)
 
 ```
+
+
+### PDP for GLM ADASYN  
+```{r pdp glm adasyn}
+pdp.glm.1 <- partial(glm.wt.adsyn, pred.var = "approved_allowed_amount", plot = TRUE)
+plot(pdp.glm.1)
+```
+
+
 
 ### SMOTE
 
@@ -1744,10 +1967,10 @@ rm(c1)
 ```{r}
 
 # Fit the GLM model
-fit <- glm(fraud ~ ., data = smote_w_triggers_train, family = binomial(link = "logit"))
+glm.wt.sm <- glm(fraud ~ ., data = smote_w_triggers_train, family = binomial(link = "logit"))
 
 # Testing Set
-test_prob <- predict(fit, newdata = smote_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
+test_prob <- predict(glm.wt.sm, newdata = smote_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(smote_w_triggers_test$fraud, test_prob)
@@ -1767,6 +1990,13 @@ c <- rbind(c, c("GLM smote_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,
 rm(c1)
 
 ```
+
+### PDP for GLM SMOTE  
+```{r pdp glm smote}
+pdp.glm.2 <- partial(glm.wt.sm, pred.var = "no_of_days_stayed", plot = TRUE)
+plot(pdp.glm.2)
+```
+
 
 ### MWMOTE
 
@@ -1800,10 +2030,10 @@ rm(c1)
 ```{r}
 
 # Fit the GLM model
-fit <- glm(fraud ~ ., data = mwmote_w_triggers_train, family = binomial(link = "logit"))
+glm.wt.mw <- glm(fraud ~ ., data = mwmote_w_triggers_train, family = binomial(link = "logit"))
 
 # Testing Set
-test_prob <- predict(fit, newdata = mwmote_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
+test_prob <- predict(glm.wt.mw, newdata = mwmote_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(mwmote_w_triggers_test$fraud, test_prob)
@@ -1823,9 +2053,16 @@ c <- rbind(c, c("GLM mwmote_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5
 rm(c1)
 
 
-test_prob = predict(fit, newdata = mwmote_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
+test_prob = predict(glm.wt.mw, newdata = mwmote_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
 test_roc = roc(mwmote_w_triggers_test$fraud ~ test_prob, plot = TRUE, print.auc = TRUE)
 
+```
+
+
+### PDP for GLM MWMOTE  
+```{r pdp glm mwmote}
+pdp.glm.3 <- partial(glm.wt.mw, pred.var = "claim_duration_days", plot = TRUE)
+plot(pdp.glm.3)
 ```
 
 ### ROSE
@@ -1867,10 +2104,10 @@ test_roc = roc(rose_wo_triggers_test$fraud ~ test_prob, plot = TRUE, print.auc =
 
 
 # Fit the GLM model
-fit <- glm(fraud ~ ., data = rose_w_triggers_train, family = binomial(link = "logit"))
+glm.wt.rose <- glm(fraud ~ ., data = rose_w_triggers_train, family = binomial(link = "logit"))
 
 # Testing Set
-test_prob <- predict(fit, newdata = rose_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
+test_prob <- predict(glm.wt.rose, newdata = rose_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
 
 # Get the ROC curve and calculate the ROC AUC
 roc_obj <- roc(rose_w_triggers_test$fraud, test_prob)
@@ -1889,9 +2126,16 @@ c1 <- confusionMatrix(rose_w_triggers_test$fraud, as.factor(model_glm_test_pred)
 c <- rbind(c, c("GLM rose_w_triggers_train", c1$overall[1], c1$byClass[c(1,2,5,6,7)], roc_auc, pr_auc))
 rm(c1)
 
-test_prob = predict(fit, newdata = rose_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
+test_prob = predict(glm.wt.rose, newdata = rose_w_triggers_test %>% dplyr::select(-c("fraud")), type = "response")
 test_roc = roc(rose_w_triggers_test$fraud ~ test_prob, plot = TRUE, print.auc = TRUE)
 
+```
+
+
+### PDP for GLM ROSE  
+```{r pdp glm rose}
+pdp.glm.4 <- partial(glm.wt.rose, pred.var = "claim_count_flag", plot = FALSE)
+plot(pdp.glm.4)
 ```
 
 ## Naive Bayes Classifier
